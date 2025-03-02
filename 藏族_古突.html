@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>酸奶</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/藏族_古突1.jpg);
+    background-position: center;
+    background-size:contain; background-repeat: no-repeat;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+     /* background-color: tan; */
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+
+
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>古 &nbsp 突</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        古突是藏族的传统习俗之一，其历史可以追溯到古代藏族的驱鬼仪式。<br>
+        在藏历腊月二十九（部分地区为十一月二十九或九月三十）的晚上，藏族人民会吃“古突”以示除旧迎新。<br>
+        古突的名称源于藏语，“古”意为“九”，指藏历十二月二十九，“突”则是面食的意思。<br>
+        最初，古突是驱鬼仪式中的供品，后来逐渐演变为藏历新年前夕的“年夜饭”，成为藏族人民迎接新年的传统美食。<br>
+        古突不仅是一种美食，还承载着丰富的文化寓意。它象征着吉祥、团结和家庭和谐，是藏族人民迎接新年的传统习俗。<br>
+        古突中通常会包入一些具有特殊寓意的物品，如羊毛（代表心肠软）、辣椒（代表刀子嘴）、木炭（代表黑心肠）、硬币（代表发大财）等。<br>
+        通过这些物品，人们在享用古突时增添了欢乐气氛，也寄托了对新年的美好愿望。<br>
+</b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    主要食材：青稞粉、小麦粉、牛肉或羊肉、萝卜、人参果（蕨麻）、奶渣、糌粑、香菜、葱姜等。<br>
+    特殊寓意物品：石子、辣椒、羊毛、木炭、硬币等。<br>
+</i></b></p>
+</div>
+<div class="photos1">
+    <img src="photos/藏族_古突2.jpg" alt="面粉">    
+    <img src="photos/藏族_古突3.jpg" alt="萝卜">
+    <img src="photos/藏族_古突4.jpg" alt="人参果">
+    <img src="photos/藏族_古突5.jpg" alt="酸萝卜">
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    将青稞粉和小麦粉混合，加入适量水揉成面团，醒发30分钟。<br>
+    将牛肉或羊肉切成小块，用盐、花椒粉腌制15分钟。<br>
+    萝卜、人参果切丁，葱姜切末备用。<br>
+    锅中加油，炒香葱姜末，加入肉块翻炒至变色，再加入萝卜、人参果等食材，加水炖煮20分钟。<br>
+    将醒好的面团分成小剂子，擀成薄片，包入肉馅和特殊寓意物品，捏紧封口。<br>
+    将包好的古突放入沸水中煮至浮起即可。<br>
+</p>
+</div>
+<div class="photos2">
+<img src="photos/藏族_古突6.jpg" alt="古突">
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    面团醒发：面团醒发时间不宜过长，否则会过于松散。<br>
+    包馅封口：包馅时封口要严实，避免煮时破裂。<br>
+    汤底炖煮：炖煮汤底时可以加入少量酱油或老抽提色。<br>
+    寓意物品：包入特殊寓意物品时，需提前准备好，并确保物品清洁。<br>
+    煮古突：煮古突时水要开后再下锅，煮至浮起即可。<br>
+</p></i></b>
+</div>
+<div class="video_intro">
+    <h2><b><i>
+        五、视频介绍
+    </i></b></h2>
+    <p>一些网上的制作这道菜的视频，可供大家学习和参考，满足自己的食欲!</p>
+    <a href="https://www.bilibili.com/video/BV1Y34y1b7MF/?spm_id_from=333.337.search-card.all.click">bilibili上的教程</a>
+</div>
+<a href="详情页_藏族.html" class="a1">返回到藏族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

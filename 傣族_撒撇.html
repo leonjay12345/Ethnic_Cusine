@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>酸笋螺蛳</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/傣族_撒撇1.jpg);
+    background-position: center;
+    background-size:contain; background-repeat: no-repeat;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+
+
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>酸笋螺蛳</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        撒撇是傣族饮食文化中极具代表性的传统美食，其历史渊源可以追溯到唐代。<br>
+        据《岭表录异》记载，当时的“圣齑”（即牛肠里的苦汁和牛肉）与现今的撒撇非常相似。<br>
+        撒撇在傣语中意为“肉类凉拌”，是傣族人民在长期的生活中创造的独特美食，具有清热解毒、健脾开胃的功效。<br>
+    </b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    螺蛳：选择新鲜的田螺，买回后放入清水中浸泡3天，让螺蛳吐尽泥沙。<br>
+    酸笋：将酸笋切成薄片或丝，备用。<br>
+    调料：准备姜片、蒜末、干辣椒、八角、香叶、生抽、老抽、料酒、盐、糖等。<br>
+</i></b></p>
+</div>
+<div class="photos1">
+<img src="photos/傣族_撒撇2.jpg" alt="/">
+<img src="photos/傣族_撒撇3.jpg" alt="/">
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    准备食材：<br>
+    主料：牛肚（牛胃）、牛脾脏、牛肉等。<br>
+    辅料：新鲜韭菜、香柳、缅芫荽、小米辣、五加叶、香辣蓼草等。<br>
+    调料：盐、味精、辣椒面、柠檬汁等。<br>
+    处理牛肚：<br>
+    在杀牛前一个多小时，给牛喂一些五加叶和香辣蓼草。<br>
+    牛宰杀后，取出牛肚，洗净后放入开水中烫2分钟，捞出后快速刮洗干净，切成条。<br>
+    制作苦水：<br>
+    从牛胃中取出初步消化的草汁，这是撒撇的灵魂所在。<br>
+    将草汁与牛苦肠中的苦水混合，熬制成浓汁。<br>
+    调制蘸水：<br>
+    将切好的韭菜、香柳、缅芫荽、小米辣等切碎，加入盐、味精、辣椒面等调料，搅拌均匀。<br>
+    根据口味，可以加入柠檬汁调成柠檬撒。<br>
+    拌制撒撇：<br>
+    将切好的牛肚、牛肉等主料放入蘸水中，搅拌均匀，让食材充分吸收蘸水的味道。<br>
+    可以根据个人喜好，选择生食或熟食。生食的撒撇更为鲜嫩，熟食的撒撇则口感更为细腻。<br>
+</p>
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    口感丰富：撒撇的口感酸辣苦鲜，层次分明，初尝微苦，回味悠甜。<br>
+    药膳价值：撒撇具有清热解毒、健脾开胃的功效，是傣族人民夏季消暑的必备美食。<br>
+    文化意义：撒撇不仅是傣族人民的日常美食，也是招待客人的上等佳肴，象征着家庭的团聚和幸福。<br>
+</p></i></b>
+</div>
+<div class="video_intro">
+    <h2><b><i>
+        五、视频介绍
+    </i></b></h2>
+    <p>一些网上的制作这道菜的视频，可供大家学习和参考，品味茶的韵味！</p>
+    <a href="https://www.bilibili.com/video/BV1QT4y1F7DN/?spm_id_from=333.337.search-card.all.click">bilibili上的教程</a>
+</div>
+<a href="详情页_傣族.html" class="a1">返回到傣族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

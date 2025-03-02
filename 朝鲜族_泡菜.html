@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>石锅拌饭</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/朝鲜族_石锅拌饭1.jpg);
+    background-position: center;
+    background-size:contain; background-repeat: no-repeat;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+
+
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>石锅拌饭</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        朝鲜族泡菜的历史非常悠久，其起源可以追溯到朝鲜族的祖先从原始社会开始采摘山野菜及种植蔬菜的时期。<br>
+        最初，人们发现将蔬菜浸渍在盐水中可以保存较长时间，于是发明了腌制蔬菜的方法，这便是泡菜的雏形。<br>
+        后来，随着农业技术的发展，人们开始种植白菜、萝卜等蔬菜，这些蔬菜逐渐成为腌制泡菜的主要材料。<br>
+        19世纪中叶，朝鲜族人从朝鲜半岛移居到中国境内，泡菜也随之流传进来，成为朝鲜族生活中不可或缺的食品。<br>
+        泡菜不仅是朝鲜族饮食文化中的重要组成部分，还具有丰富的营养价值。<br>
+        它富含维生素C、B族维生素、钙、铁、磷等矿物质，以及有助于消化的乳酸菌。<br>
+        泡菜中的乳酸菌可以抑制有害细菌的滋生，调节肠胃功能，预防便秘和肠癌。此外，泡菜的低热量和高纤维特性使其成为健康饮食的理想选择。<br>
+    </b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    主料：白菜、萝卜、黄瓜等蔬菜。<br>
+    调料：盐、辣椒面、大蒜、生姜、葱、虾酱、鱼酱、糯米粉、白糖、鱼露等。<br>
+    辅料：胡萝卜、韭菜、洋葱、苹果、梨等。（可选）<br>
+</i></b></p>
+</div>
+<div class="photos1">
+<img src="photos/朝鲜族_泡菜2.jpg" alt="萝卜">
+<img src="photos/朝鲜族_泡菜3.jpg" alt="白菜">
+<img src="photos/朝鲜族_泡菜4.jpg" alt="黄瓜">
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+准备蔬菜：将白菜洗净，切成两半或四半，用盐水腌制6-8小时，然后冲洗并挤干水分。<br>
+准备调料：将大蒜、生姜、苹果、梨等辅料切成末，加入辣椒面、虾酱、鱼露、糯米粉、白糖等调料，搅拌均匀。<br>
+腌制泡菜：将调好的酱料均匀涂抹在白菜或其他蔬菜上，确保每一层都沾上调料。<br>
+发酵：将涂抹好酱料的蔬菜放入密封容器中，放置在阴凉处发酵2-3天，直到泡菜产生酸味。<br>
+</p>
+</div>
+<div class="photos2">
+<img src="photos/朝鲜族_泡菜5.jpg" alt="泡菜">
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    卫生：制作过程中所有工具和容器必须保持清洁，避免油脂和细菌的污染。<br>
+    盐的比例：盐的用量要适中，过多的盐会影响发酵，过少则无法有效抑制有害细菌。<br>
+    发酵环境：发酵时应选择阴凉、通风的地方，避免阳光直射和高温。<br>
+    密封：发酵容器必须密封良好，以保持发酵环境的稳定。<br>
+    尝试：发酵过程中可以尝试泡菜的味道，根据个人口味调整发酵时间。<br>
+</p></i></b>
+</div>
+<div class="video_intro">
+    <h2><b><i>
+        五、视频介绍
+    </i></b></h2>
+    <p>一些网上的制作这道菜的视频，可供大家学习和参考，品味茶的韵味！</p>
+    <a href="https://www.bilibili.com/video/BV1pW4y1y77T/?spm_id_from=333.337.search-card.all.click">bilibili上的教程</a>
+</div>
+<a href="详情页_朝鲜族.html" class="a1">返回到朝鲜族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>馕包肉</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/柯尔克孜族_馕包肉1.jpg);
+    background-position: center;
+    background-size:contain; background-repeat: no-repeat;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+
+
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>馕包肉</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        馕包肉的历史悠久，其制作方法和食用方式与新疆地区的生活方式密切相关。<br>
+        新疆地区气候干燥，人们需要摄入足够的热量和营养来维持体力。馕是新疆的传统主食，具有耐储存、易携带的特点；而肉食则是重要的蛋白质来源。<br>
+        将炖煮得软烂的羊肉放在馕上，不仅方便食用，还能让馕吸收肉汁，增加风味，这种搭配方式逐渐演变成了馕包肉这道美食。<br>
+    </b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    主料：羊排肉、馕。<br>
+    辅料：洋葱、胡萝卜、土豆、青椒、红椒等<br>
+    调料：食用油、盐酱、油、八角、香叶、花椒、葱、姜、蒜、辣椒酱、香菜（根据口味选择）<br>
+</i></b></p>
+</div>
+<div class="photos1">
+<img src="photos/柯尔克孜族_馕包肉3.jpg" alt="2">
+<img src="photos/柯尔克孜族_馕包肉2.jpg" alt="3">
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    准备食材：将羊排肉洗净，切成小块；洋葱、胡萝卜、土豆、青椒、红椒等蔬菜洗净后切好备用；葱、姜、蒜切片或切末。<br>
+    焯水：将羊排肉放入锅中，加入足够的水，加入适量的葱、姜、料酒，大火煮沸后撇去浮沫，焯水3-5分钟，捞出沥干水分。<br>
+    炒制：锅中倒油，油热后放入葱、姜、蒜爆香，加入花椒、八角、香叶炒出香味，然后放入焯好水的羊排肉，翻炒至表面微黄。<br>
+    炖煮：加入适量的酱油、辣椒酱，翻炒均匀，让羊排肉均匀上色。然后加入洋葱、胡萝卜、土豆等蔬菜，继续翻炒。<br>
+    加入足够的水，水量要没过羊排肉，大火煮沸后转小火炖煮1-1.5小时，直到羊排肉炖至软烂。<br>
+    烤制馕：将馕放入烤箱或馕坑中，烤至表面金黄酥脆。<br>
+    装盘：将炖好的羊排肉和蔬菜盛在盘子中，浇上原汤，将烤好的馕放在羊排肉上，最后撒上香菜碎即可。<br>
+</p>
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    食材选择：一定要选择新鲜的羊排肉和优质的蔬菜，以保证口感和营养。<br>
+    炖煮时间：炖煮羊排肉的时间要根据肉的质地和火候进行调整，确保羊排肉炖至软烂。<br>
+    烤制馕：烤制馕时要注意火候，避免烤焦。烤好的馕要趁热食用，口感更佳。<br>
+    食用安全：羊排肉要炖煮至全熟，避免食用未熟透的肉，以免引起肠胃不适。<br>
+    搭配食用：馕包肉最好搭配一些清淡的蔬菜或水果一起食用，以平衡营<br>
+</p></i></b>
+</div>
+<div class="video_intro">
+    <h2><b><i>
+        五、视频介绍
+    </i></b></h2>
+    <p>一些网上的制作这道菜的视频，可供大家学习和参考。</p>
+    <a href="https://www.bilibili.com/video/BV11T4y1L7zk/?spm_id_from=333.337.search-card.all.click">bilibili上的教程</a>
+</div>
+<a href="详情页_柯尔克孜族.html" class="a1">返回到柯尔克孜族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

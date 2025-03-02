@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>石板烤肉</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width:200vh;
+    height: 50vh;
+    background-image: url(photos/高山族_石板烤肉1.jpg);
+    background-position: center;
+    background-size:contain; background-repeat: no-repeat;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+
+
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>锅塌</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        石板烤肉是一种具有悠久历史的传统美食，其起源可以追溯到多个地区和民族。<br>
+        利用大理石作为烹饪工具，将食材放在烧热的石板上烤制。<br>
+        高山族也有类似的石板烤肉传统，这种烹饪方式体现了当地人民对自然资源的巧妙利用。<br>
+    </b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    肉类：通常选用牛肉、羊肉或猪肉，切成薄片或小块。<br>
+    蔬菜：洋葱、青椒、蘑菇、土豆片等，可根据个人口味选择。<br>
+    调料：盐、辣椒粉、黑胡椒粉、孜然粉、酱油、蚝油、料酒等。<br>
+    石板：选择一块表面平整、耐高温的天然石板，如大理石或火山石。<br>
+</i></b></p>
+</div>
+<div class="photos1">
+<img src="photos/高山族_石板烤肉2.jpg" alt="/">
+<img src="photos/高山族_石板烤肉3.jpg" alt="/">
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    准备石板：将石板清洗干净，放在火上或烤箱中加热至高温。<br>
+    腌制肉类：将切好的肉片放入盆中，加入适量的盐、胡椒粉、料酒、酱油、蚝油等调料，搅拌均匀后腌制2-3小时。<br>
+    加热石板：将石板加热至180-200℃，可以用手感觉石板的热度，或者滴几滴水测试，水滴迅速蒸发即表示石板已足够热。<br>
+    烤制食材：在石板上刷一层薄油，将腌制好的肉片和蔬菜依次放在石板上，撒上适量的盐和孜然粉。<br>
+    翻面烤制：待一面烤至金黄色后，翻面继续烤制，直到食材完全熟透。<br>
+    搭配食用：烤好的肉和蔬菜可以搭配生菜、薄饼或米饭食用，还可以配上特制的蘸料，如辣椒面或腐乳汤。<br>
+</p>
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    石板选择：石板必须耐高温，加热过程中不会释放有害物质。<br>
+    火候控制：石板温度不宜过高，以免食材烤焦，保持中高温即可。<br>
+    食材处理：肉类需提前腌制，蔬菜可直接烤制，但需注意烤制时间，避免过熟。<br>
+    安全防护：加热石板时需小心操作，避免烫伤。<br>
+</p></i></b>
+</div>
+<div class="video_intro">
+    <h2><b><i>
+        五、视频介绍
+    </i></b></h2>
+    <p>一些网上的制作这道菜的视频，可供大家学习和参考，品味茶的韵味！</p>
+    <a href="https://www.bilibili.com/video/BV1KdzmYJE3o/?spm_id_from=333.337.search-card.all.click">bilibili上的教程</a>
+</div>
+<a href="详情页_高山族.html" class="a1">返回到高山族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

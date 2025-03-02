@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>牛肉拉面</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/回族_牛肉拉面1.jpg);
+    background-position: center; background-repeat: no-repeat;
+    background-size:contain;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+
+
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>牛肉拉面</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        牛肉拉面的历史可以追溯到清朝同治年间，由兰州的回族厨师马保子始创。<br>
+        马保子以牛肉为主要原料，结合兰州特有的面粉和工艺，制作出了汤鲜味美、面条劲道的牛肉面。后来，这种面食逐渐演变为今天的兰州牛肉拉面，并成为兰州的标志性美食。
+        牛肉拉面不仅是一道美味的面食，更是一种文化的传承和地方特色的体现。<br>
+        它以其独特的“一清、二白、三红、四绿、五黄”（汤清、萝卜白、辣油红、香菜蒜苗绿、面条黄）而闻名。<br>
+        牛肉富含优质蛋白质，面条提供丰富的碳水化合物，搭配蔬菜和香料，营养均衡，适合各个年龄段的人群食用。<br>
+    </b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    主料：高筋面粉500克、牛肉（牛腱子肉）500克。<br>
+    辅料：牛骨适量、白萝卜1根、香菜、蒜苗、葱姜蒜、辣椒油。<br>
+    调料：盐、生抽、料酒、八角、花椒、桂皮、香叶、小茴香、草果等。<br>
+</i></b></p>
+</div>
+<div class="photos1">
+<img src="photos/回族_牛肉拉面2.jpg" alt="牛肉">
+<img src="photos/回族_羊肉泡馍4.jpg" alt="小料">
+<img src="photos/回族_牛肉拉面3.jpg" alt="香菜">
+<img src="photos/回族_牛肉拉面4.jpg" alt="面粉">
+<img src="photos/回族_牛肉拉面5.jpg" alt="辣椒油">
+<img src="photos/回族_牛肉拉面6.jpg" alt="葱姜蒜">
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    熬制牛骨汤：将牛骨洗净，放入清水中浸泡2小时去血水，然后加入足量清水、姜片、八角、花椒等香料，小火慢炖4-5小时。<br>
+    煮牛肉：将牛腱子肉放入锅中，加入适量清水、生姜和盐，煮至熟烂后捞出，切成薄片备用。<br>
+    制作面团：将面粉放入盆中，加入少许小苏打和食用碱，慢慢加入水，揉成光滑的面团，醒面1小时。<br>
+    制作面条：将醒好的面团搓成长条，用手反复拉伸折叠，制成细面、韭叶面或宽面。<br>
+    煮面条：将拉好的面条放入沸水中煮熟，捞出沥干水分，放入碗中。<br>
+    拼装面条：在面条上放上切好的牛肉片，加入适量白萝卜片、香菜、蒜苗。<br>
+    调味与装碗：淋上适量辣椒油，最后加入滚烫的牛骨高汤。<br>
+</div>
+<div class="photos2">
+<img src="photos/回族_牛肉拉面8.jpg" alt="面">
+<img src="photos/回族_牛肉拉面9.jpg" alt="面">
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    面团醒发：面团需多次醒发，每次醒发时间不少于15分钟，以确保面团的柔软度。<br>
+    牛肉处理：牛肉需提前浸泡去血水，炖煮时加入香料可增加风味。<br>
+    汤底熬制：汤底需用小火慢炖，确保汤汁浓郁。<br>
+    面条拉制：拉面时力度要均匀，避免面条断裂。<br>
+    食材新鲜：确保食材新鲜，牛肉和蔬菜需清洗干净。<br>
+</p></i></b>
+</div>
+<div class="video_intro">
+    <h2><b><i>
+        五、视频介绍
+    </i></b></h2>
+    <p>一些网上的制作这道菜的视频，可供大家学习和参考，满足自己的食欲!</p>
+    <a href="https://www.bilibili.com/video/BV1ia411F7CJ/?spm_id_from=333.337.search-card.all.click">bilibili上的教程</a>
+</div>
+<a href="详情页_回族.html" class="a1">返回到回族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

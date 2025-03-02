@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>狍肉</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform:scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/鄂伦春族_狍肉1.jpg);
+    background-position: center;
+    background-size:contain; background-repeat: no-repeat;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+
+
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>狍肉</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        狍子是鄂伦春族传统狩猎生活中的重要资源，其肉质鲜嫩、纯厚，营养丰富，一直是鄂伦春人的主要食物来源之一。<br>
+        在鄂伦春族的生活中，狍肉不仅是日常饮食的重要组成部分，还在婚礼、节日或款待贵宾时用于制作丰盛的狍肉宴。<br>
+        其中，婚礼狍肉宴是最为讲究的，所用狍子必须是生擒的一对，由德高望重的长者主刀，剥下的狍皮还会放在火上烤焦，让烟雾带着特殊香味弥漫整个猎乡，象征着分享婚礼的欢乐与幸福。<br>
+    </b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    主料：新鲜狍子肉（可选择带骨肉）。<br>
+    辅料：盐、野韭菜花、野葱花、煮肉汤等。<br>
+    工具：刀、锅、腰刀（用于食用时）。<br>
+</i></b></p>
+</div>
+<div class="photos1">
+
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    1. 手把肉：<br>
+    将狍子肉切成大块，清洗干净。<br>
+    放入锅中，加入适量清水，煮沸后撇去浮沫。<br>
+    加入少量盐调味，继续煮至肉质五分熟，略带血丝即可。<br>
+    煮好的肉捞出，每人分发一块带骨肉和一把腰刀，蘸盐水或韭菜花食用。<br>
+    2. 烤狍肉：<br>
+    将狍子肉切成厚片或大块，用盐腌制片刻。<br>
+    将肉块穿在木棍上，放在篝火旁烤制。<br>
+    烤至外表金黄、冒油时，抹上盐即可食用。<br>
+    3. 狍肉宴：<br>
+    准备多种狍肉菜肴，如煮狍肉、烤狍肉、狍肝、狍血肠等。<br>
+    狍肝可以生食，或切碎后与狍油、盐、野葱花等调料拌匀后食用。<br>
+    煮狍肉时，肉块不宜煮得太熟，以保持鲜嫩口感。<br>
+</p>
+</div>
+<div class="photos2">
+<img src="photos/" alt="">
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    火候控制：煮狍肉时，火候不宜过大，煮至五分熟即可，这样肉质最为鲜嫩。<br>
+    食材处理：狍肉在煮制前需清洗干净，但无需过度处理，以保留其原始风味。<br>
+    保存方法：多余的狍肉可以切成条晒成肉干，便于保存和携带。<br>
+    食用礼仪：食用狍肉时，通常会蘸盐水或韭菜花，以突出肉的鲜味。<br>
+</p></i></b>
+</div>
+<!-- <div class="video_intro">
+    <h2><b><i>
+        五、视频介绍
+    </i></b></h2>
+    <p>一些网上的制作这道菜的视频，可供大家学习和参考，满足自己的食欲!</p>
+    <a href="https://www.bilibili.com/video/BV1bA411q76T/?spm_id_from=333.337.search-card.all.click&vd_source=4b0e7bc2542975de76f7eabaff0315ec">bilibili上的教程</a>
+</div> -->
+<a href="详情页_鄂伦春族.html" class="a1">返回到鄂伦春族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

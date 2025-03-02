@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鸡肉稀饭</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/哈尼族_鸡肉稀饭1.jpg);
+    background-position: center;
+    background-size:contain; background-repeat: no-repeat;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+
+
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>鸡肉稀饭</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        鸡肉稀饭在云南、贵州等地的苗族、景颇族、佤族等少数民族中具有悠久的历史。<br>
+        它不仅是家常的早餐或晚餐，还在节日庆典、待客等重要场合中扮演重要角色。<br>
+        鸡肉稀饭的制作方法和食用习惯在不同地区有所不同，但都体现了当地人民对美食的热爱和对传统的坚守。<br>
+        鸡肉稀饭不仅滋味鲜美，还具有丰富的营养价值：<br>
+        强健筋骨：鸡肉富含蛋白质和多种矿物质，能促进肌肉组织和骨骼的形成。<br>
+        健脾养胃：大米经过长时间炖煮后容易消化吸收，有养胃的作用。<br>
+        开胃：鸡肉中的呈味氨基酸使稀饭味道鲜美，能促进唾液分泌，开胃。<br>
+        增强抵抗力：鸡肉中的蛋白质能增强体液免疫，提高人体抵抗力。<br>
+        补充营养：鸡肉稀饭含有丰富的水分、碳水化合物、蛋白质、维生素和矿物质，营养丰富。<br>
+</b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    主料：土鸡、大米。<br>
+    辅料：姜、葱、蒜、草果、盐、胡椒粉、生辣椒、生姜、干草果面、刺芫荽等。<br>
+</i></b></p>
+</div>
+<div class="photos1">
+
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    准备食材：
+    选用当地土鸡，洗净后切成小块，用料酒、盐等调料腌制片刻。
+    大米淘洗干净，沥干水分。<br>
+    炖煮鸡汤：
+    将鸡肉放入锅中，加入适量水和姜片，慢火炖煮至鸡肉熟透，汤汁浓郁。<br>
+    炒米：
+    锅中加油，放入姜葱蒜末炒香，加入大米翻炒至米粒变白，有香味。<br>
+    煮稀饭：
+    将炒好的米粒倒入炖好的鸡汤中，小火慢炖至米粒软糯，稀饭浓稠。<br>
+    加入鸡肉：
+    将炖好的鸡肉撕成小块，放入稀饭中，继续炖煮15分钟。<br>
+    调味：
+    加入适量盐、胡椒粉、干草果面等调料，搅拌均匀。<br>
+    装盘：
+    煮好的鸡肉稀饭装入碗中，撒上葱花、香菜等点缀。<br>
+</p>
+</div>
+<div class="photos2">
+<img src="photos/哈尼族_鸡肉稀饭2.jpg" alt="/">
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    选材：一定要选用散养的土鸡，最好是母鸡，这样的鸡肉质鲜嫩，营养丰富。<br>
+    火候控制：炒米时火候要适中，防止米粒炒焦。<br>
+    搅拌：煮稀饭时要不时搅拌，防止粘锅。<br>
+    调味：根据个人口味调整盐和胡椒粉的用量。<br>
+</p></i></b>
+</div>
+<div class="video_intro">
+    <h2><b><i>
+        五、视频介绍
+    </i></b></h2>
+    <p>一些网上的制作这道菜的视频，可供大家学习和参考，满足自己的食欲!</p>
+    <a href="https://www.bilibili.com/video/BV1vh411k7Nn/?spm_id_from=333.337.search-card.all.click">bilibili上的教程</a>
+</div>
+<a href="详情页_哈尼族.html" class="a1">返回到哈尼族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

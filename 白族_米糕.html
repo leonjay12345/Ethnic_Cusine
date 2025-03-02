@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>米糕</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/白族_米糕1.jpg);
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+
+
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>米 &nbsp 糕</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        白族米糕是云南大理地区白族的传统美食，具有深厚的文化底蕴。<br>
+        米糕在白族文化中象征着“步步高升”“吉祥如意”，常用于过年过节、盖房竖柱等喜庆场合，寓意着生活美满、幸福安康。<br>
+        米糕的制作过程颇具仪式感，体现了白族人民对生活的热爱和对传统的坚守。<br>
+</b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    主料：上等的新鲜粳米（约七成）、糯米（约三成）。<br>
+    辅料：红糖、白糖、酵母、水。<br>
+    工具：蒸锅、模具、筛子、搅拌器。<br>
+</i></b></p>
+</div>
+<!--<div class="photos1">
+
+</div>-->
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    浸泡大米：
+    将粳米和糯米淘洗干净，用适量清水浸泡一夜或3小时以上，直至米粒泡软。<br>
+    磨粉：
+    将浸泡好的米粒沥干，加入适量水，用搅拌器打成细腻的米浆。<br>
+    发酵：
+    将米浆倒入大盆中，加入酵母和适量白糖，搅拌均匀后进行发酵，直至米浆体积膨胀至两倍大。<br>
+    二次发酵：
+    发酵好的米浆再次搅拌排气，然后倒入模具中，进行二次发酵，约15-20分钟。<br>
+    蒸制：
+    将发酵好的米糕放入蒸锅中，大火蒸30分钟，蒸好后焖10分钟定型。<br>
+    装饰：
+    蒸好的米糕可以撒上红糖、芝麻等进行装饰，增加风味和美观度。<br>
+</p>
+</div>
+<div class="photos2">
+<img src="photos/白族_米糕2.jpg" alt="/">
+<img src="photos/白族_米糕3.jpg" alt="/">
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    发酵时间：发酵时间根据环境温度而定，一般需要2-3小时，发酵至米浆体积膨胀至两倍大即可。<br>
+    温度控制：发酵时温度不宜过高，否则会影响酵母的活性。<br>
+    模具选择：模具内壁需刷上一层薄薄的油，防止米糕粘连。<br>
+    蒸制时间：蒸制时间需根据米糕的厚度调整，一般为30分钟。<br>
+</p></i></b>
+</div>
+<div class="video_intro">
+    <h2><b><i>
+        五、视频介绍
+    </i></b></h2>
+    <p>一些网上的制作这道菜的视频，可供大家学习和参考，满足自己的食欲!</p>
+    <a href="https://www.bilibili.com/video/BV1Nu4y1f7n7/?spm_id_from=333.337.search-card.all.click">bilibili上的教程</a>
+</div>
+<a href="详情页_白族.html" class="a1">返回到白族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        珍珠椰子船
+    </title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/黎族_珍珠椰子船1.jpg);
+    background-position: center; background-repeat: no-repeat;
+    background-size:contain;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>珍珠椰子船</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        珍珠椰子船，又称“珍珠柳子船”或“椰子船”，是海南琼海、文昌等地的传统小吃。<br>
+        它以新鲜椰子、糯米和椰汁为主要食材，具有浓厚的椰乡气息。<br>
+        珍珠椰子船不仅是海南人民祈求幸福的象征，也是宴请贵宾和亲朋好友的上等佳品。<br>
+        其独特的制作方式和风味，体现了海南人民对自然食材的巧妙利用和对传统文化的传承。<br>
+    </b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    主料：糯米1000克，新鲜椰子1只。<br>
+    辅料：白糖200克，淡鲜奶200克（或沸水）。<br>
+</i></b></p>
+</div>
+<div class="photos2">
+<img src="photos/黎族_珍珠椰子船2.jpg" alt="/">
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    准备糯米：将糯米淘洗干净，浸泡数小时后滤去水分，晾干待用。<br>
+    处理椰子：选择刚结满白瓢的鲜嫩椰子，剥除外衣及硬壳，取出整只肉瓢。在椰子顶端切开小口，保留椰盖，倒掉椰子水。<br>
+    填充糯米：将糯米填入椰盅内，加入白糖和鲜椰汁，再灌入淡鲜奶或沸水。<br>
+    密封煮制：用椰盖封口并绑紧，将椰子放入盛有清水的锅中（确保椰盅内水分不渗出），加盖后用旺火煮沸，再转小火煮3-4小时，直至糯米熟透胀满。<br>
+    冷却切块：煮熟后取出，自然冷却，解开绑绳，用刀将糯米椰盅切成两头尖、中间宽的船形块件，摆盘即可。<br>
+</p>
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    椰子选择：必须选用鲜嫩的椰子，这样椰肉和糯米结合后口感更佳。<br>
+    糯米浸泡：糯米需提前浸泡数小时，确保其充分吸水，蒸煮后更加软糯。<br>
+    密封煮制：煮制过程中，椰盅需密封绑紧，防止水分渗出，影响口感。<br>
+    火候控制：先用旺火煮沸，再转小火慢煮，确保糯米充分蒸熟。<br>
+</p></i></b>
+</div>
+<a href="详情页_黎族.html" class="a1">返回黎族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

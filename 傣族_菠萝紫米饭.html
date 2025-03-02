@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>菠萝紫米饭</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/傣族_菠萝紫米饭1.jpg);
+    background-position: center;
+    background-size:contain; background-repeat: no-repeat;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+
+
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>菠萝紫米饭</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        菠萝紫米饭是傣族的传统美食之一，其历史可以追溯到傣族人民在云南西双版纳地区定居后，与当地丰富的自然资源相结合的饮食文化。<br>
+        菠萝和紫米都是当地常见的食材，这种独特的结合不仅体现了傣族人民对食材的巧妙利用，也展现了他们对美食的创新精神。<br>
+    </b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    紫米：200克。<br>
+    菠萝：1个（中等大小）。<br>
+    糯米：100克（可选，增加口感）。<br>
+    椰浆：100毫升（可选，增加香气）。<br>
+    白糖：适量（根据个人口味调整）。<br>
+    盐：少许（可选，提升风味）。<br>
+</i></b></p>
+</div>
+<div class="photos1">
+<img src="photos/傣族_菠萝紫米饭2.jpg" alt="/">
+<img src="photos/傣族_菠萝紫米饭3.jpg" alt="/">
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+准备紫米和糯米：
+将紫米和糯米分别洗净，浸泡3-4小时，使其充分吸水，便于煮熟。<br>
+处理菠萝：
+选择一个成熟的菠萝，洗净后从顶部切开，用勺子挖出菠萝果肉，注意不要挖破菠萝外壳，保留完整的菠萝碗。
+将挖出的菠萝果肉切成小丁，备用。<br>
+煮米饭：
+将浸泡好的紫米和糯米放入电饭煲中，加入适量的水（比平时煮饭略少一些），加入100毫升椰浆（如果使用），增加香气。<br>
+按下煮饭键，煮熟后打开电饭煲，加入切好的菠萝丁，用饭勺搅拌均匀，让菠萝的香气充分融入米饭中。<br>
+盖上电饭煲盖子，继续焖5-10分钟，让米饭充分吸收菠萝的汁水。<br>
+调味：
+打开电饭煲，根据个人口味加入适量的白糖和少许盐，搅拌均匀，使米饭甜咸适中。<br>
+装盘：
+将煮好的菠萝紫米饭盛入之前挖好的菠萝碗中，压实，让米饭更好地填充菠萝碗。<br>
+最后，将菠萝碗倒扣在盘子上，使菠萝紫米饭成型，即可上桌享用。<br>
+</p>
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    菠萝选择：选择成熟的菠萝，这样菠萝的香气更浓郁，口感更甜。<br>
+    浸泡时间：紫米和糯米需要提前浸泡，这样煮出来的米饭才会软糯。<br>
+    水量控制：煮饭时水的量比平时略少，因为菠萝本身会出水。<br>
+    搅拌均匀：加入菠萝丁后要充分搅拌，让米饭充分吸收菠萝的香气。<br>
+    焖煮时间：煮好后继续焖5-10分钟，让米饭更好地吸收菠萝的汁水，口感更佳。<br>
+</p></i></b>
+</div>
+<div class="video_intro">
+    <h2><b><i>
+        五、视频介绍
+    </i></b></h2>
+    <p>一些网上的制作这道菜的视频，可供大家学习和参考，品味茶的韵味！</p>
+    <a href="https://www.bilibili.com/video/BV1hi421d7Z9/?spm_id_from=333.337.search-card.all.click">bilibili上的教程</a>
+</div>
+<a href="详情页_傣族.html" class="a1">返回到傣族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>佛跳墙</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/汉族_佛跳墙1.jpg);
+    background-position: center; background-repeat: no-repeat;
+    background-size:contain;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>佛跳墙</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        佛跳墙，又名“福寿全”，是福建省福州市的传统名菜，属于闽菜系。<br>
+        其历史可以追溯到清朝道光年间。<br>
+        相传，福州官钱局官员宴请福建布政使周莲时，厨师郑春发在传统菜肴“福寿全”的基础上，
+        加入多种海鲜和山珍，经过精心烹制，使其味道更加鲜美。<br>
+        后来，郑春发在福州开设“聚春园”菜馆，这道菜因香气四溢、味美无比，被文人墨客赞为“坛启荤香飘四邻，佛闻弃禅跳墙来”，因而得名“佛跳墙”。<br>
+    </b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    海鲜类：鲍鱼、海参、鱼翅、瑶柱、鱼肚、花胶等。<br>
+    肉类：土鸡、鸭肉、猪蹄、火腿、蹄筋等。<br>
+    素菜类：花菇、冬笋、杏鲍菇、木耳等。<br>
+    其他：鹌鹑蛋、鸽蛋、南瓜、枸杞等。<br>
+    调料：高汤、绍兴酒、盐、鸡精、胡椒粉等。<br>
+</i></b></p>
+</div>
+<div class="photos2">
+<img src="photos/汉族_佛跳墙2.jpg" alt="/">
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    准备食材：
+    提前将鲍鱼、海参、瑶柱等干货泡发，海参需泡发1-2天。
+    鹌鹑蛋煮熟后剥壳，杏鲍菇煎至两面金黄。
+    鸡肉、鸭肉、猪蹄等食材焯水去腥。<br>
+    熬制高汤：
+    将鸡骨、猪骨、火腿骨等放入锅中，加入适量清水，大火煮沸后撇去浮沫，小火熬制5-6小时，制成高汤。<br>
+    装盘与炖煮：
+    在炖盅底部铺上姜片，依次放入鲍鱼、海参、鱼肚、瑶柱、蹄筋、花菇、冬笋等食材。
+    加入高汤、绍兴酒、盐、鸡精等调料，盖上荷叶或保鲜膜，隔水炖煮2-3小时。<br>
+    出锅装盘：
+    炖好后，根据个人口味调整汤汁浓稠度，加入南瓜熬煮片刻，使汤色金黄。
+    最后撒上葱花、枸杞等点缀，即可上桌。<br>
+</p>
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    食材处理：鲍鱼、海参等干货需提前泡发，确保食材充分吸水，口感更佳。<br>
+    高汤熬制：高汤是佛跳墙的灵魂，需用小火慢炖，确保汤汁清澈、鲜美。<br>
+    食材顺序：炖煮时，先放较硬的食材（如鲍鱼、海参），后放易熟的食材（如鹌鹑蛋、鱼翅），避免炖煮不均匀。<br>
+    火候控制：炖煮过程中需保持小火，避免汤汁煮干或糊底。<br>
+    调味：出锅前可根据个人口味调整盐、鸡精等调料，确保汤汁鲜美。<br>
+</p></i></b>
+</div>
+<a href="详情页_汉族.html" class="a1">返回汉族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

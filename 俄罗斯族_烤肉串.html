@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>烤肉串</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform:scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/俄罗斯族_烤肉串1.jpg);
+    background-position: center;
+    background-size:contain; background-repeat: no-repeat;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>烤肉串</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        俄罗斯烤肉串（шашлык）源自土耳其的炭火烤肉，18世纪中叶传入俄国后迅速流行，成为俄罗斯美食的代表之一。<br>
+        这种烤肉方式最初是为了方便军队在战争中取食，后来逐渐演变为一种传统美食，并融入俄罗斯的饮食文化。<br>
+        在俄罗斯，烤肉串不仅是美食，更是社交和休闲的重要方式，尤其在户外烧烤活动中，它象征着友谊和团聚。<br>
+    </b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    肉类：牛肉、羊肉或猪肉，通常选择鲜嫩的瘦肉。<br>
+    蔬菜：洋葱、青红椒、蘑菇等，用于增加口感和营养。<br>
+    腌制调料：盐、黑胡椒、大蒜、柠檬汁、酸奶或优酪乳、香草（如百里香、迷迭香）、植物油等。<br>
+    其他：竹签或金属串，用于穿肉。<br>
+</i></b></p>
+</div>
+<div class="photos1">
+
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    准备食材：<br>
+    将肉类切成约3厘米大小的块状。<br>
+    洋葱、青红椒等蔬菜切成与肉块大小相近的块。<br>
+    腌制肉类：<br>
+    将切好的肉块放入大碗中，加入盐、黑胡椒、大蒜末、柠檬汁、酸奶或优酪乳等调料。<br>
+    搅拌均匀后，盖上保鲜膜，放入冰箱腌制至少2小时，让肉充分入味。<br>
+    串肉：<br>
+    用竹签或金属串将腌制好的肉块和蔬菜块交替穿起，注意保持每块之间的间隔。<br>
+    烤制：<br>
+    预热烤箱至200℃，或准备炭火烤架。<br>
+    将肉串放在烤架上，不断翻转以确保均匀受热，烤至金黄色。<br>
+    如果使用烤箱，烤制时间约为15-20分钟。<br>
+    装盘与享用<br>
+    将烤好的肉串取出，撒上切碎的香草或芝麻，搭配生洋葱、番茄酱或酸奶油一起食用。<br>
+</p>
+</div>
+<div class="photos2">
+<img src="photos/俄罗斯族_烤肉串2.jpg" alt="/">
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    腌制时间：肉类需充分腌制，至少2小时，以确保入味。<br>
+    火候控制：烤制过程中要避免火候过大，防止烤焦，同时确保肉块熟透。<br>
+    食材搭配：蔬菜和肉类的搭配可以根据个人口味调整，但洋葱是必不可少的，它能增加风味。<br>
+    竹签处理：如果使用竹签，需提前浸泡在水中，防止烤制时烧焦。<br>
+    烤制方式：传统俄罗斯烤肉串多用炭火烤制，风味更佳，但也可用烤箱替代。<br>
+</p></i></b>
+</div>
+
+
+<a href="详情页_俄罗斯族.html" class="a1">返回到俄罗斯族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

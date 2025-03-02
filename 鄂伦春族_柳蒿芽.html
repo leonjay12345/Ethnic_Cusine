@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>柳蒿芽</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform:scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/鄂伦春族_柳蒿芽1.jpg);
+    background-position: center;
+    background-size:contain; background-repeat: no-repeat;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+
+
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>柳蒿芽</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        柳蒿芽（学名：Artemisia selengensis），在达斡尔语中被称为“昆米勒”，是一种生长在中国东北地区的野生植物。<br>
+        它不仅是一种珍贵的野生蔬菜，还具有深厚的文化和历史意义。<br>
+        在达斡尔族和鄂伦春族等少数民族中，柳蒿芽被称为“救命菜”，在历史上曾帮助当地居民度过饥荒。<br>
+        它不仅是一种美食，还被赋予了驱邪避瘟、祈求平安的象征意义。<br>
+        此外，柳蒿芽在达斡尔族的传统医药中也有广泛应用，用于治疗感冒、发热、关节炎等疾病。<br>
+    </b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    主料：新鲜柳蒿芽（嫩芽和嫩叶部分）。<br>
+    辅料：大蒜、葱、辣椒（可选）、盐、食用油、醋、生抽等。<br>
+    其他：玉米面（用于粉蒸柳蒿芽）。<br>
+</i></b></p>
+</div>
+<div class="photos1">
+
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    1. 凉拌柳蒿芽：
+    采摘新鲜的柳蒿芽，清洗干净。
+    将柳蒿芽放入开水中焯烫2-3分钟，捞出后迅速放入冷水中浸泡，以保持脆嫩。<br>
+    挤干水分，切成小段。
+    准备蒜末、葱花，放入热油中炸香，然后将热油浇在柳蒿芽上。
+    加入适量盐、醋、生抽调味，搅拌均匀即可。<br>
+    2. 粉蒸柳蒿芽：
+    将焯水后的柳蒿芽攥干水分，撒上适量玉米面，搅拌均匀。
+    将处理好的柳蒿芽放入蒸锅，蒸8分钟。<br>
+    准备料汁：生抽、香醋、葱油、辣椒油、蒜末、盐、香油、熟芝麻等，搅拌均匀。
+    将蒸好的柳蒿芽与料汁混合，即可食用。<br>
+    3. 柳蒿芽炖肉：
+    将新鲜柳蒿芽洗净，焯水后切段。
+    准备肉类（如猪肉、排骨或鱼肉），切块后焯水去腥。<br>
+    将肉类和柳蒿芽一起放入锅中，加入适量水，炖煮30分钟左右。
+    根据口味加入盐、胡椒粉等调味，炖至肉烂即可。<br>
+</p>
+</div>
+<div class="photos2">
+<img src="photos/鄂伦春族_柳蒿芽2.jpg" alt="/">
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    选择嫩芽：柳蒿芽的嫩芽和嫩叶口感最佳，老叶会影响风味。<br>
+    焯水处理：焯水可以去除柳蒿芽的苦涩味，但时间不宜过长，以免营养流失。<br>
+    保存方法：焯水后的柳蒿芽可以攥干水分后冷冻保存，方便随时食用。<br>
+    搭配食材：柳蒿芽适合与肉类、土豆等搭配，能增加菜肴的香气和风味。<br>
+</p></i></b>
+</div>
+<div class="video_intro">
+    <h2><b><i>
+        五、视频介绍
+    </i></b></h2>
+    <p>一些网上的制作这道菜的视频，可供大家学习和参考，满足自己的食欲!</p>
+    <a href="https://www.bilibili.com/video/BV1bA411q76T/?spm_id_from=333.337.search-card.all.click&vd_source=4b0e7bc2542975de76f7eabaff0315ec">bilibili上的教程</a>
+</div>
+<a href="详情页_鄂伦春族.html" class="a1">返回到鄂伦春族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

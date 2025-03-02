@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>酥油茶</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/藏族_酥油茶1.jpg);
+    background-position: center;
+    background-size:contain; background-repeat: no-repeat;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+     /* background-color: tan; */
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    /* animation: rotate 10s linear infinite; */    
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+
+
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>酥油茶</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        酥油茶是藏族的传统饮品，藏语称为“恰苏玛”，其历史可以追溯到远古时期。<br>
+        相传，藏族人民在高原上发现将酥油与茶叶结合，不仅能增添茶汤的风味，还能提供额外的能量和营养，帮助抵御恶劣的高原气候。<br>
+        随着茶叶通过“茶马古道”进入藏区，酥油茶的制作方式逐渐形成并流传至今。<br>
+        在藏族文化中，酥油茶不仅是日常饮品，更是款待客人的重要礼仪。<br>
+        为客人奉上一碗热腾腾的酥油茶，是对客人的尊重和欢迎之意的表达。<br>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    茶叶：通常使用砖茶（如普洱茶或茯砖茶）。<br>
+    酥油：最好选择牦牛酥油。<br>
+    盐、水：适量。
+</i></b></p>
+</div>
+<div class="photos1">
+<img src="photos/藏族_酥油茶2.jpg" alt="普洱茶叶">    
+<img src="photos/藏族_酥油茶3.jpg" alt="酥油">
+<img src="photos/藏族_酥油茶4.jpg" alt="盐">
+</div>
+<div class="making">
+    <h2><b><i>三、制作方法：</i></b></h2>
+    <p>
+<i>煮茶：</i><br>
+将砖茶切成小块，放入锅中，加入适量水煮沸，煮至茶水颜色变深，茶香四溢。
+加入酥油和盐：<br>
+在煮好的茶水中加入适量酥油和盐，搅拌均匀，使酥油与茶水充分融合。<br>
+<i>搅拌：</i><br>
+将茶水倒入特制的酥油茶桶（“董莫”），用木棍（“甲罗”）上下抽打，直到茶水变得浓稠且呈现乳白色。如果没有酥油茶桶，也可以使用搅拌机。<br>
+<i>过滤与饮用：</i><br>
+将搅拌好的酥油茶过滤后倒入茶壶，即可饮用。
+</p>
+</div>
+<div class="photos2">
+    <img src="photos/藏族_酥油茶5.jpg" alt="腌制">
+    <img src="photos/藏族_酥油茶6.jpg" alt="腌制">
+</div>
+<div class="notice">
+    <h2><b><i>
+        四、烹饪及食用建议
+    </h2></i></b>
+<p><b><i>
+    选择优质材料：选择优质的砖茶和酥油，以确保口感和营养。<br>
+    控制温度：茶水温度不宜过高或过低，以免影响酥油的融合。<br>
+    搅拌均匀：搅拌时要均匀用力，避免酥油结块。<br>
+    调整口味：根据个人喜好调整酥油和盐的比例。<br>
+    传统礼仪：在藏族地区，喝酥油茶时不能一口喝干，需边喝边加。<br>
+</p></i></b>
+</div>
+<div class="video_intro">
+    <h2><b><i>
+        五、视频介绍
+    </i></b></h2>
+    <p>一些网上的制作这道菜的视频，可供大家学习和参考，满足自己的食欲!</p>
+    <a href="https://www.bilibili.com/video/BV1CZ4y117LK/?spm_id_from=333.337.search-card.all.click">bilibili上的教程</a>
+</div>
+<a href="详情页_藏族.html" class="a1">返回到藏族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

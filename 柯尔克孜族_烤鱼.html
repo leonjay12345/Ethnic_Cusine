@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>烤鱼</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/柯尔克孜族_烤鱼1.jpg);
+    background-position: center;
+    background-size:contain; background-repeat: no-repeat;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+
+
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>烤鱼</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        克州烤鱼的历史背景与当地的自然环境和生活方式密切相关。<br>
+        克州位于新疆维吾尔自治区的西南部，地处天山南麓，拥有丰富的水资源，当地湖泊、河流众多，盛产各种鱼类。<br>
+        在柯尔克孜族的传统生活中，捕鱼是重要的食物来源之一。<br>
+        他们利用当地的自然资源，将捕获的鱼类通过简单而独特的烹饪方法进行加工，逐渐形成了克州烤鱼这一特色美食。<br>
+        这种烤鱼不仅满足了日常饮食需求，也成为了当地文化的一部分，代代相传。<br>
+    </b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    主料：新鲜的鱼，如草鱼、鲤鱼等，以500-600克左右为宜。<br>
+    辅料：洋葱1个，青椒1个，红椒1个，栗子8个，千禧小西红柿8个（或其他喜欢的蔬菜）。<br>
+    调料：盐适量，食用油25克，郫县豆瓣酱50克，清水50克，烧烤料3克，孜然粉适量。<br>
+</i></b></p>
+</div>
+<div class="photos1">
+<img src="photos/柯尔克孜族_烤鱼3.jpg" alt="2">
+<img src="photos/柯尔克孜族_烤鱼2.jpg" alt="3">
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    准备食材：将蔬菜洗净备用。鱼去内脏和鳃，洗净后在背部每隔2厘米划一刀，方便入味。然后涂抹适量盐腌制30分钟。<br>
+    腌制与烤制：在腌制鱼的同时，预热烤箱至220度。把柠檬汁和烧烤料均匀涂抹在鱼身上，然后将鱼放入铺有锡纸的烤盘中。<br>
+    将烤盘放入预热好的烤箱中层，烤制约28分钟。烤制过程中，可以用刷子在鱼身上刷几次油，以保持鱼肉湿润并增加口感。<br>
+    如果上色过深，可以加盖一层锡纸防止烤焦。<br>
+    炒制蔬菜与酱料：在烤鱼的同时，可以准备蔬菜与酱料。<br>
+    将洋葱、青椒、红椒等蔬菜切块备用。锅中倒油开小火，油温七成热时放入洋葱炒香。<br>
+    然后加入郫县豆瓣酱和水调匀后翻炒至汤汁浓稠。<br>
+    最后烤制与装盘：当鱼烤熟后，将所有蔬菜放入另一个烤盘烤5分钟。<br>
+    然后将鱼和蔬菜放入刚才炒好的酱料烤盘中，撒适量孜然粉。<br>
+    再次放入烤箱烤5分钟后取出装盘即可享用美味的烤鱼。<br>
+</p>
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    食材选择：一定要选择新鲜的鱼，以保证烤鱼的口感和安全。<br>
+    烤制时间：烤制时间要根据鱼的大小和烤箱的实际温度进行调整，避免烤焦。<br>
+    烤箱温度：烤箱温度一般设定在220度左右，具体温度可以根据实际情况进行微调。<br>
+    食用安全：烤鱼虽然美味，但也要注意食用安全，避免食用过多的油和盐。<br>
+</p></i></b>
+</div>
+<div class="video_intro">
+    <h2><b><i>
+        五、视频介绍
+    </i></b></h2>
+    <p>一些网上的制作这道菜的视频，可供大家学习和参考。</p>
+    <a href="https://www.bilibili.com/video/BV1WF411h76G/?spm_id_from=333.337.search-card.all.click">bilibili上的教程</a>
+</div>
+<a href="详情页_柯尔克孜族.html" class="a1">返回到柯尔克孜族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>臭豆腐</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/汉族_臭豆腐1.jpg);
+    background-position: center; background-repeat: no-repeat;
+    background-size:contain;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>臭豆腐</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        臭豆腐是一种极具特色的汉族传统小吃，以其独特的“闻起来臭、吃起来香”的特点深受人们喜爱。<br>
+        其历史可以追溯到数百年前，起源众说纷纭。<br>
+        最著名的是长沙臭豆腐，相传由清朝时期的安徽人王致和发明。<br>
+        他将豆腐切成小块，用盐腌制后发酵，意外发现其独特的风味，从而开启了臭豆腐的制作历史。<br>
+        如今，臭豆腐不仅是中国各地的特色小吃，还成为中华文化的重要符号之一。<br>
+    </b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    主料：老豆腐或石膏豆腐。<br>
+    辅料：盐、花椒、八角、桂皮、香叶、辣椒粉、五香粉。<br>
+    发酵材料：青腐乳、豆豉、白酒、盐、青矾、纯碱等。<br>
+    调料：辣椒油、酱油、麻油、香菜、葱花、蒜末。<br>
+    工具：密封容器、竹签、油锅、烤箱（可选）。<br>
+</i></b></p>
+</div>
+<div class="photos2">
+<img src="photos/汉族_臭豆腐2.jpg" alt="/">
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    准备豆腐：
+    将豆腐切成大小均匀的小块，用纱布包裹后压榨，使其紧实。
+    洗净豆腐块，沥干水分。<br>
+    制作发酵卤水：
+    将青腐乳、豆豉、盐、白酒、青矾、纯碱等材料混合，加入适量清水，搅拌均匀后过滤，制成卤水。<br>
+    发酵豆腐：
+    将豆腐块放入卤水中，确保卤水完全浸没豆腐。
+    将容器密封，放置在阴凉通风处发酵，发酵时间根据个人口味调整，一般为数天至数周。
+    发酵过程中，豆腐表面会逐渐长出白色菌丝。<br>
+    清洗豆腐：
+    发酵完成后，用清水冲洗豆腐，去除多余的腌料。<br>
+    炸制或烤制：
+    将豆腐块放入油锅中，油温七成热时炸至金黄酥脆。
+    或者将豆腐块放入烤箱，上下火180℃烤制10-15分钟。<br>
+    调制酱汁：
+    准备辣椒油、酱油、麻油、蒜末、香菜、葱花等调料，混合均匀。<br>
+    装盘：
+    将炸好的臭豆腐块放入盘中，戳一个小洞，淋上调好的酱汁，撒上香菜、葱花等点缀。<br>
+</p>
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    发酵卫生：发酵过程中，容器和工具需保持清洁，避免杂菌污染。<br>
+    发酵时间：发酵时间根据环境温度和个人口味调整，避免发酵时间过长导致异味。<br>
+    卤水保存：卤水需密封保存，避免接触油脂，可重复使用，越久越香。<br>
+    炸制火候：炸制时油温需控制在七成热，避免豆腐炸焦。<br>
+    调料选择：可根据个人口味调整调料，但不宜过多掩盖臭豆腐的本味。<br>
+</p></i></b>
+</div>
+<a href="详情页_汉族.html" class="a1">返回汉族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

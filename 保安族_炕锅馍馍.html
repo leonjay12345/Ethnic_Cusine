@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>炕锅馍馍</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/保安族_炕锅馍馍1.jpg);
+    background-position: center;
+    background-size:contain; background-repeat: no-repeat;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+
+
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>炕锅馍馍</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        炕锅馍馍是保安族饮食文化的重要组成部分，它见证了保安族人民的生活变迁和文化传承。
+        这种食物的制作方式和食用习惯代代相传，成为保安族文化的重要标志之一。<br>
+        在过去的生活环境中，保安族人民居住的地区可能没有现代烤箱等设备，炕锅馍馍的制作方式充分利用了当地的资源，体现了他们对环境的适应能力和生存智慧。<br>
+        在传统的社交活动和节日庆典中，炕锅馍馍常常作为招待客人的食物，增进邻里和族人之间的感情，具有重要的社会意义。<br>
+    </b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    面粉：适量，是制作馍馍的主要原料。<br>
+    酵母或面肥：用于发酵面团，使馍馍松软。<br>
+    干面粉：适量，用于揉面和防粘。<br>
+    碱水：适量，中和面团的酸性，使馍馍颜色金黄。<br>
+    菜油：适量，增加馍馍的香味和口感。<br>
+    食盐：适量，调味。<br>
+    白糖：（可选）如果制作甜味馍馍，可以加入适量白糖。<br>
+</i></b></p>
+</div>
+<div class="photos1">
+
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    和面：
+    将面粉倒入盆中，加入酵母或面肥，用温水搅拌均匀，揉成光滑的面团，盖上湿布，放置在温暖处发酵至两倍大。<br>
+    准备碱水：
+    将碱块用少量温水化开，搅拌均匀，备用。<br>
+    揉面：
+    发酵好的面团取出，揉匀后分成小剂子。将小剂子擀成薄片，抹上菜油，撒上干面粉，然后卷起来，捏成花式（如牡丹、月季等）。<br>
+    炕制：
+    在炕锅内刷一层油，将捏好的馍馍放入炕锅中，用中小火慢慢炕制。期间要不断翻面，使馍馍受热均匀。<br>
+    出锅：
+    当馍馍两面金黄，表面酥脆时，即可出锅。<br>
+</p>
+</div>
+<div class="photos2">
+
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    发酵温度和时间<br>
+    发酵面团时，温度要适中，一般在25℃ - 35℃之间。发酵时间根据温度而定，一般需要1 - 2小时，发酵好的面团会膨胀至两倍大，内部呈蜂窝状。<br>
+    碱水的用量<br>
+    碱水的用量要适量，过多会使馍馍发苦，过少则无法中和酸性。可以先用少量碱水试一下，根据面团的颜色和口感调整用量。<br>
+    炕制火候<br>
+    炕制时火候要适中，不能太大，否则容易烧焦。要不断翻面，使馍馍受热均匀，避免一面过熟而另一面未熟。<br>
+    造型美观<br>
+    在捏馍馍时，造型要美观，可以捏成各种花式，增加食物的趣味性。<br>
+</p></i></b>
+</div>
+<div class="video_intro">
+    <h2><b><i>
+        五、视频介绍
+    </i></b></h2>
+    <p>一些网上的制作这道菜的视频，可供大家学习和参考。</p>
+    <a href="https://www.bilibili.com/video/BV1pu4y187h2/?spm_id_from=333.337.search-card.all.click">bilibili上的教程</a>
+</div>
+<a href="详情页_保安族.html" class="a1">返回到保安族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>辣白菜</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/朝鲜族_辣白菜1.jpg);
+    background-position: center;
+    background-size:contain; background-repeat: no-repeat;
+    animation:flash 20s infinite;
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+
+
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>辣白菜</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        辣白菜是朝鲜族的传统发酵食品，其历史可以追溯到朝鲜半岛的早期农业社会。<br>
+        最初，朝鲜族人为了保存蔬菜，发明了用盐水腌制蔬菜的方法。<br>
+        随着时间的推移，人们逐渐加入了辣椒、大蒜、生姜等调料，形成了现代辣白菜的独特风味。<br>
+    </b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    主料：大白菜1颗（约2000克）。<br>
+    调料：粗盐100克、辣椒粉100克、鱼露50毫升、蒜10瓣（切碎）、姜1块（切碎）、白萝卜200克（切丝）、胡萝卜100克（切丝）
+    韭菜100克（切段）、苹果1个（切碎）、梨1个（切碎）、葱2根（切段）、糖30克。(可以根据个人喜好添加，除此之外也可以添加)
+</i></b></p>
+</div>
+<div class="photos1">
+<img src="photos/朝鲜族_辣白菜2.jpg" alt="大白菜">
+<img src="photos/朝鲜族_辣白菜3.jpg" alt="辣椒粉">
+
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    准备调料：将蒜、姜切碎，白萝卜、胡萝卜切丝，韭菜切段，苹果和梨切碎。
+    将辣椒粉、鱼露、糖、蒜末、姜末、白萝卜丝、胡萝卜丝、韭菜段、苹果碎、梨碎、葱段放入一个大碗中，搅拌均匀。<br>
+    处理白菜：将白菜洗净，切成两半或四半，用盐水浸泡3-6小时，使白菜变软并去除多余水分。浸泡后用清水冲洗干净，沥干水分。<br>
+    涂抹酱料：将调好的辣椒酱均匀地涂抹在每一片白菜叶上，确保每一层都裹上辣椒酱。<br>
+    密封发酵：将涂抹好辣椒酱的白菜放入一个干净的密封容器中，压实，盖上盖子。放置在阴凉处发酵3-5天，期间可以偶尔打开容器，释放一下气体。<br>
+    冷藏保存：发酵完成后，将辣白菜放入冰箱冷藏。冷藏后的辣白菜口感更加爽脆，酸辣味也更加浓郁。<br>
+</p>
+</div>
+<div class="photos2">
+
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    容器清洁：制作过程中所有工具和容器必须保持清洁，避免油脂和细菌的污染。<br>
+    盐的比例：盐的用量要适中，过多的盐会影响发酵，过少则无法有效抑制有害细菌。<br>
+    发酵环境：发酵时应选择阴凉、通风的地方，避免阳光直射和高温。<br>
+    密封：发酵容器必须密封良好，以保持发酵环境的稳定。<br>
+    尝试：发酵过程中可以尝试辣白菜的味道，根据个人口味调整发酵时间。<br>
+    卫生：制作过程中最好戴一次性手套，避免直接用手接触辣白菜<br>
+</p></i></b>
+</div>
+<div class="video_intro">
+    <h2><b><i>
+        五、视频介绍
+    </i></b></h2>
+    <p>一些网上的制作这道菜的视频，可供大家学习和参考，品味茶的韵味！</p>
+    <a href="https://www.bilibili.com/video/BV1kW41117Ap/?spm_id_from=333.337.search-card.all.click">bilibili上的教程</a>
+</div>
+<a href="详情页_朝鲜族.html" class="a1">返回到朝鲜族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

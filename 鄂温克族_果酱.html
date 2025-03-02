@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>果酱</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/鄂温克族_果酱1.jpg);
+    background-position: center; background-repeat: no-repeat;
+    background-size:contain;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+
+
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>果酱</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        鄂温克族果酱的制作与使用，体现了鄂温克族在长期的狩猎和采集生活中对自然资源的利用与智慧结晶。<br>
+        果酱的原料多为当地丰富的野生浆果，如越橘、山丁子、蓝莓等，这些浆果不仅富含营养，还能在寒冷的冬季为人们提供能量。<br>
+        此外，果酱的制作和保存方法也反映了鄂温克族在传统生活方式中对食物保存技术的探索和传承。<br>
+    </b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    新鲜水果：选择当地常见的野生浆果，如越橘、蓝莓、山丁子等，也可使用苹果、梨等其他水果。<br>
+    糖：白砂糖、冰糖或麦芽糖，用于增加甜味和延长保质期。<br>
+    柠檬汁：可增加果酱的酸度，延长保质期。<br>
+    水：适量，根据水果的含水量调整。<br>
+</i></b></p>
+</div>
+<div class="photos1">
+
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    准备水果：将水果洗净、去皮、去核，切成小块。<br>
+    混合糖和水果：将水果与糖按1:0.5或1:1的比例混合，静置1-2小时，让水果出汁。<br>
+    熬煮：
+    将水果和糖放入锅中，加入适量水（如果水果较干）。<br>
+    用大火煮沸后转小火，不断搅拌，防止糊锅。<br>
+    熬至果酱浓稠，滴入冷水中不散即可。<br>
+    加入柠檬汁：在果酱快熬好时加入少量柠檬汁，搅拌均匀。<br>
+    装瓶：将果酱趁热装入消毒过的玻璃瓶中，拧紧盖子，倒扣放置至常温后冷藏。<br>
+</p>
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    锅具选择：最好使用不锈钢锅或玻璃锅，避免使用铁锅或铝锅，以免影响果酱颜色和口感。<br>
+    糖的比例：糖的用量需根据水果种类和保存需求调整，一般为果肉重量的30%-50%。<br>
+    消毒容器：装果酱的容器需提前用开水煮5-10分钟消毒，晾干后使用。<br>
+    火候控制：熬煮时先大火煮沸，再转小火慢熬，注意搅拌防止糊锅。<br>
+    保存方法：果酱需趁热装瓶，倒扣放置至常温后冷藏，避免空气进入。<br>
+</p></i></b>
+</div>
+
+<a href="详情页_鄂温克族.html" class="a1">返回到鄂温克详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

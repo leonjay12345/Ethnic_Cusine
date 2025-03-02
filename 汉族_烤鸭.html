@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>北京烤鸭</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/汉族_烤鸭1.jpg);
+    background-position: center; background-repeat: no-repeat;
+    background-size:contain;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>烤鸭</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        北京烤鸭的历史源远流长，其起源可以追溯到南北朝时期，当时《食珍录》中已有“炙鸭”的记载。<br>
+        明朝时期，烤鸭技术从南京传入北京，并逐渐发展成为宫廷御膳。<br>
+        明朝迁都北京后，北京烤鸭因其独特的风味和精湛的烹饪技艺，成为官府和皇室的席上珍品。<br>
+        到了清朝，烤鸭更是成为勋戚贵族间往来的必备礼品。<br>
+        如今，北京烤鸭不仅是中国烹饪艺术的瑰宝，更是北京地域文化和饮食文化的重要象征。<br>
+    </b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    主料：北京填鸭或樱桃谷鸭（体重约2.5-3公斤）。<br>
+    调料：麦芽糖、盐、花椒、八角、桂皮、香叶、甜面酱、京葱、黄瓜条、薄饼。<br>
+    工具：烤炉（传统挂炉或电烤炉）、挂钩、打气筒、烫鸭用的大锅。<br>    
+</i></b></p>
+</div>
+<div class="photos2">
+<img src="photos/汉族_烤鸭2.jpg" alt="/">
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    处理鸭子：
+    宰杀鸭子，褪去鸭毛，清洗干净。
+    在鸭子颈部开口，用打气筒向皮下打气，使皮肉分离。
+    用沸水烫皮，使鸭皮紧绷，然后涂上麦芽糖水，挂在通风处晾干。<br>
+    腌制：
+    将盐、花椒、八角、桂皮、香叶等香料炒香后磨成粉末，均匀涂抹在鸭子内外，腌制2-3小时。<br>
+    烤制：
+    将鸭子挂在烤炉中，用果木炭火烤制，期间需不断翻动鸭子，确保受热均匀。
+    烤至鸭皮金黄酥脆，肉质熟透即可。<br>
+    切片与食用：
+    烤好的鸭子需由专业师傅切片，每片鸭肉需带皮。
+    鸭片搭配甜面酱、京葱丝、黄瓜条，用薄饼卷食。<br>
+    知名老字号：全聚德，四季民福等...
+</p>
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    面团湿度：面团不要过于湿润，否则成品会失去酥脆的口感。<br>
+    烤制温度：烤制时温度不宜过高，以免烤焦。<br>
+    煮制时间：煮面片时，注意控制时间，避免煮得过烂。<br>
+    保存方法：烤制好的奶面片应放在干燥处保存，避免受潮。<br>
+</p></i></b>
+</div>
+<a href="详情页_汉族.html" class="a1">返回汉族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

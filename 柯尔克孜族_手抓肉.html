@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手抓肉</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/柯尔克孜族_手抓肉1.jpg);
+    background-position: center;
+    background-size:contain; background-repeat: no-repeat;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+
+
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>手抓肉</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        手抓肉的历史可以追溯到古代游牧民族的生活方式。<br>
+        在草原和山区，肉类是主要的食物来源，而手抓肉的烹饪方式简单、实用，适合在野外或游牧生活中快速制作和食用。<br>
+        这种食物不仅能满足牧民的营养需求，还具有很强的社交属性，常常用于招待客人、庆祝节日或举行家族聚会等场合。<br>
+    </b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    主要食材：手抓肉的主要食材是羊或牛的肉。通常选用肥瘦相间的部位，如羊腿肉、羊肋排、牛肋排等。这些部位的肉质鲜嫩，含有适量的脂肪，烹饪后口感更佳。<br>
+    配菜：除了主肉，还会准备一些配菜，如洋葱、胡萝卜、土豆等，这些蔬菜可以增加菜肴的口感和营养。<br>
+</i></b></p>
+</div>
+<div class="photos1">
+<img src="photos/柯尔克孜族_手抓羊肉3.jpg" alt="2">
+<img src="photos/柯尔克孜族_手抓羊肉2.jpg" alt="3">
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    清洗：将羊肉或牛肉切成大块，放入清水中浸泡一段时间，去除血水和杂质，使肉质更加干净。<br>
+    煮制：将处理好的肉块放入锅中，加入足够的清水，放入葱段、姜片、花椒等调料，大火煮沸后撇去浮沫，转小火慢炖。<br>
+    调味：在煮制过程中，根据个人口味加入适量的盐、胡椒粉、孜然粉等调味料。这些调料不仅能提升肉的风味，还能去腥增香。<br>
+    出锅：煮至肉质软烂后，将肉捞出，切成薄片或小块，放入盘中。<br>
+    配菜：将煮好的肉汤过滤后，加入切好的洋葱、胡萝卜、土豆等蔬菜，煮至蔬菜熟透后，将蔬菜和汤汁一起浇在肉上。<br>
+    准备餐具：在正式食用前，通常会准备一些小刀，方便客人将肉切成小块。<br>
+食用方法：客人可以用手直接抓取肉块，蘸上一些辣椒酱、蒜泥等调料后食用。这种直接用手抓取的方式，不仅能让客人感受到食物的温度和质感，还能增加用餐的乐趣。<br>
+搭配饮品：手抓肉通常搭配奶茶、酸奶或啤酒等饮品，既能解腻，又能增加食欲。<br>
+</p>
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    浸泡去血水：将羊肉切成大块，用清水浸泡2-3小时，中间换水1-2次，以去除羊肉中的血水和腥味。<br>
+    冷水下锅：羊肉一定要冷水下锅，这样可以更好地去除血水和杂质，同时锁住羊肉的鲜味。<br>
+    卫生问题：在处理羊肉和配料时，要注意卫生，避免食物污染。<br>
+    适量食用：手抓肉含有较高的蛋白质和脂肪，建议适量食用。<br>
+</p></i></b>
+</div>
+<div class="video_intro">
+    <h2><b><i>
+        五、视频介绍
+    </i></b></h2>
+    <p>一些网上的制作这道菜的视频，可供大家学习和参考。</p>
+    <a href="https://www.bilibili.com/video/BV1kS4y1W7PX/?spm_id_from=333.337.search-card.all.click">bilibili上的教程</a>
+</div>
+<a href="详情页_柯尔克孜族.html" class="a1">返回到柯尔克孜族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

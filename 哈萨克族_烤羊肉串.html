@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>烤羊肉串</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/哈萨克族_烤羊肉串1.jpg);
+    background-position: center; background-repeat: no-repeat;
+    background-size:contain;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+
+
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>烤羊肉串</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+      烤羊肉串是中国新疆地区非常著名的一种民族风味小吃，具有悠久的历史。<br>
+      早在1800年前，中国内地就已有了烤羊肉串的记载。<br>
+      从考古资料来看，《汉代画像》全集中就有烤羊肉串的石刻图像，马王堆一号汉墓还出土过烤肉用的扇子。<br>
+</b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+  主料：羊肉（最好选择肥瘦相间的羊腿肉或羊肩肉）。<br>
+  辅料：洋葱、鸡蛋、面粉、孜然粉、辣椒粉、盐、生抽、料酒、食用油等。<br>
+</i></b></p>
+</div>
+<div class="photos1">
+<img src="photos/哈萨克族_烤羊肉串2.jpg" alt="2">
+<img src="photos/哈萨克族_烤羊肉串3.jpg" alt="3">
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+  准备羊肉：<br>
+  将羊肉切成大小均匀的块状，约3-4厘米见方。
+  如果羊肉较肥，可以先冷冻10-20分钟，方便切割。<br>
+  腌制羊肉：<br>
+  将切好的羊肉放入大碗中，加入适量的盐、孜然粉、辣椒粉、生抽、料酒等调料，搅拌均匀。
+  加入切碎的洋葱末，增加风味。
+  腌制时间约半小时左右，让调料充分渗透到羊肉中。<br>
+  穿串：<br>
+  将腌制好的羊肉块用竹签或铁钎依次穿好，每串约6-7块肉。
+  竹签提前用盐水浸泡，防止烤制时断裂。<br>
+  烤制：<br>
+  将炭火或电烤箱预热至适当温度。
+  将穿好的羊肉串放在烤架上，烤制时需注意火候，避免烤焦或烤糊。<br>
+  烤制过程中不断翻动羊肉串，使其均匀受热。<br>
+  当羊肉表面呈现金黄色时，撒上一些孜然粉、辣椒粉等调料，增加口感和风味。<br>
+  一般烤制时间为10-15分钟，具体时间根据羊肉的厚度和烤箱的温度调整。<br>
+</p>
+</div>
+<div class="photos2">
+<img src="photos/维吾尔族_奶茶4.jpg" alt="/">
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+  羊肉选择：最好选择肥瘦相间的羊腿肉或羊肩肉，这样的羊肉烤制后口感鲜嫩多汁。<br>
+  腌制时间：腌制时间不宜过短，至少半小时，以确保羊肉充分入味。<br>
+  火候控制：烤制时火候要适中，避免烤焦或烤糊。<br>
+  翻动均匀：烤制过程中要不断翻动羊肉串，使其均匀受热。<br>
+  调料搭配：除了基本的盐和孜然粉外，还可以尝试其他调料如辣椒粉、蒜蓉、芝麻等，以增加口感和层次感。<br>
+</p></i></b>
+</div>
+<div class="video_intro">
+    <h2><b><i>
+        五、视频介绍
+    </i></b></h2>
+    <p>一些网上的制作这道菜的视频，可供大家学习和参考，满足自己的食欲!</p>  
+    <a href="https://www.bilibili.com/video/BV13WwVeQEqG/?spm_id_from=333.337.search-card.all.click">bilibili上的教程</a>
+</div>
+<a href="详情页_哈萨克族.html" class="a1">返回到哈萨克族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

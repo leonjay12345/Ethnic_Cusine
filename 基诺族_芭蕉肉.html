@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>芭蕉肉</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/基诺族_芭蕉肉1.jpg);
+    background-position: center; background-repeat: no-repeat;
+    background-size:contain;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+
+
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>芭蕉肉</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        芭蕉肉是基诺族的传统美食，其历史可以追溯到基诺族的农耕与采集生活。<br>
+        芭蕉肉的制作体现了基诺族人对自然资源的充分利用，同时也反映了他们与自然和谐共生的生活哲学。<br>
+        芭蕉肉不仅是一种食物，更是基诺族文化的重要组成部分。<br>
+    </b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    芭蕉茎：选用刚长出两三片叶子的小芭蕉树的嫩茎，这种芭蕉茎纤维尚未成熟，口感脆嫩。<br>
+    肉类：通常选用猪肉、牛肉或鸡肉，将其剁成肉末。<br>
+    辅料：芭蕉叶、生猪血、精盐、山八角、味精、干辣椒、清酱、桔子叶、红绸带等。<br>
+    调料：盐、酱油、草果粉、辣椒、大蒜、花椒等。<br>
+</i></b></p>
+</div>
+<div class="photos1">
+    <img src="photos/基诺族_芭蕉肉2.jpg" alt="/">
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    1. 准备材料<br>
+    芭蕉茎：选取新鲜的小芭蕉树嫩茎，去除外层老皮，切成小块备用。<br>
+    肉类：选择猪肉、牛肉或鸡肉，切成末或小块。<br>
+    芭蕉叶：选取新鲜的芭蕉叶，清洗干净，用于包裹。<br>
+    调料：盐、酱油、草果粉、辣椒、大蒜、花椒、味精等。<br>
+    其他：生猪血（可选，用于增加风味）、桔子叶（用于增加清香）。<br>
+    2. 处理芭蕉茎<br>
+    将芭蕉茎切成小块，放入盐水中浸泡10-15分钟，去除涩味。<br>
+    捞出后用清水冲洗干净，沥干水分备用。<br>
+    3. 调制肉馅<br>
+    将切好的肉末放入碗中，加入盐、酱油、草果粉、辣椒、大蒜末、花椒粉等调料，搅拌均匀，腌制10-15分钟，让肉馅充分入味。<br>
+    4. 包裹芭蕉肉<br>
+    取一片芭蕉叶，将芭蕉茎块和腌好的肉末混合后，放在芭蕉叶上。<br>
+    将芭蕉叶包裹成小包裹，用红绸带或芭蕉叶条扎紧，确保包裹紧密，防止漏馅。<br>
+    5. 烹饪<br>
+    蒸煮：将包裹好的芭蕉肉放入蒸锅中，大火蒸15-20分钟，直到肉熟透。<br>
+    包烧：也可以将包裹好的芭蕉肉放在炭火上烤制，烤至芭蕉叶变色，香味四溢即可。<br>
+</p>
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    选材：芭蕉茎需选用嫩茎，去除老茎部分，以保证口感。<br>
+    处理芭蕉茎：将芭蕉茎切成小块，状似肉块，便于烹饪。<br>
+    调味：根据个人口味调整调料用量，确保味道浓郁。<br>
+    包裹：用芭蕉叶包裹肉馅时，需确保包裹紧密，防止漏馅。<br>
+    烹饪：可采用蒸煮或包烧的方式，蒸煮时间一般为15-20分钟。<br>
+    去涩味：芭蕉茎和芭蕉花有涩味，需用盐水浸泡或煮烫后漂洗，去除涩味。<br>
+</p></i></b>
+</div>
+
+<a href="详情页_基诺族.html" class="a1">返回到基诺族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>牛干巴</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/阿昌族_牛干巴1.jpg);
+    background-position: center;
+    background-size:contain; background-repeat: no-repeat;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+
+
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>牛干巴</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        牛干巴是云南地区一种传统的牛肉腌制食品，其制作工艺已有数百年的历史。<br>
+        相传在元朝时期，元世祖忽必烈率兵进入云南时，回族军队发明了这种随军美食，以方便保存牛肉。<br>
+        随着时间的推移，牛干巴不仅成为当地人民日常饮食的一部分，还在各种重要场合中扮演着重要角色，如婚丧嫁娶等。<br>
+    </b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    主料：肥壮肉牛的后腿肉或牛腩肉1000克。<br>
+    调料：
+    盐：适量，用于腌制牛肉。
+    八角、草果、花椒：各适量，用于增添风味。
+    白酒：10克，用于去腥增香。
+    姜：1块，切丝，用于去腥。
+    蒜：3瓣，切末，用于增香。
+    辣椒面：适量，用于增加辣味。<br>
+</i></b></p>
+</div>
+<div class="photos1">
+<img src="photos/阿昌族_牛干巴2.jpg" alt="/">
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    准备牛肉：
+    将牛肉洗净，用厨房纸巾擦干水分，切成大小均匀的长条状。<br>
+    腌制牛肉：
+    在牛肉条中加入盐、八角、草果、花椒、白酒、姜丝、蒜末和辣椒面，充分搅拌均匀，确保每条牛肉都裹满调料。
+    将腌制好的牛肉平铺在盆中，静置1-2天，期间需多次翻面，让牛肉充分吸收调料。<br>
+    晾晒风干：
+    将腌制好的牛肉用绳子系好，挂在通风良好、干燥、阴凉的地方进行风干发酵，一般需要1-2周。<br>
+    烘烤：
+    将风干后的牛肉放入烤箱中，预热至180摄氏度，烤15-20分钟，期间需翻面，确保两面均匀受热。<br>
+</p>
+</div>
+<div class="photos2">
+
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    牛肉处理：牛肉不能用水清洗，否则会影响腌制效果。腌制过程中要确保牛肉表面无水分，否则容易腐败。<br>
+    腌制时间：腌制时间一般为15-20天，期间需多次翻面，确保牛肉均匀吸收调料。<br>
+    保存方法：牛干巴可在通风处晾干保存，也可放入密封容器中，置于阴凉干燥处，可保存数月。<br>
+    食用方法：牛干巴可直接食用，也可油炸后食用，口感更佳。油炸时需控制油温，避免牛肉烤焦。<br>
+</p></i></b>
+</div>
+<div class="video_intro">
+    <h2><b><i>
+        五、视频介绍
+    </i></b></h2>
+    <p>一些网上的制作这道菜的视频，可供大家学习和参考。</p>
+    <a href="https://www.bilibili.com/video/BV1mB4y1L79B/?spm_id_from=333.337.search-card.all.click">bilibili上的教程</a>
+</div>
+<a href="详情页_阿昌族.html" class="a1">返回到阿昌族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

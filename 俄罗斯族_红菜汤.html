@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>红菜汤</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform:scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/俄罗斯族_红菜汤1.jpg);
+    background-position: center;
+    background-size:contain; background-repeat: no-repeat;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>红菜汤</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        俄罗斯族红菜汤（Borscht）是一道具有悠久历史和深厚文化内涵的传统汤品。<br>
+        它起源于东欧地区，最初由古代斯拉夫人以甜菜根为主要食材制作而成。<br>
+        这种汤不仅因其独特的红色和丰富的口感而闻名，还因其在俄罗斯文化中的重要地位而备受喜爱。<br>
+        在寒冷的冬季，红菜汤能提供丰富的营养和热量，帮助人们抵御严寒。此外，红菜汤也常出现在家庭聚餐、节日和庆典中，象征着温暖和团聚。<br>
+    </b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    肉类：牛肉或猪肉（带骨牛肉最佳）。<br>
+    蔬菜：红菜头（甜菜根）、洋葱、土豆、胡萝卜、卷心菜、西红柿。<br>
+    调料：番茄酱、盐、糖、黑胡椒、香叶、大蒜。<br>
+    其他：黄油（可选）、酸奶油（用于最后点缀）。<br>
+</i></b></p>
+</div>
+<div class="photos1">
+
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    准备食材：<br>
+    牛肉切块，用冷水浸泡去血水后焯水。<br>
+    红菜头、土豆、胡萝卜切块，洋葱切末，卷心菜撕成小块。<br>
+    西红柿切块或切丁。<br>
+    炖煮汤底：<br>
+    将牛肉块放入锅中，加入足够的水，大火煮沸后撇去浮沫，转小火慢炖。<br>
+    加入洋葱末和香叶，炒出香味后加入红菜头块，继续翻炒。<br>
+    加入蔬菜和调味料：<br>
+    将炒好的红菜头和洋葱倒入牛肉汤中，加入土豆块、胡萝卜块，继续炖煮。
+    加入番茄酱或新鲜西红柿，搅拌均匀，根据口味加入盐、糖和黑胡椒调味。<br>
+    炖煮完成：<br>
+    继续炖煮至蔬菜软烂，汤汁浓稠。
+    最后加入卷心菜，煮5-10分钟。<br>
+    装盘与点缀：<br>
+    将炖好的红菜汤盛入碗中，可根据个人喜好加入酸奶油，撒上香菜或葱花。<br>
+</p>
+</div>
+<div class="photos2">
+<img src="photos/俄罗斯族_红菜汤2.jpg" alt="/">
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    制作技巧：<br>
+    红菜头是红菜汤的关键食材，其烹饪时间较长，需确保完全软化以释放甜味和色泽。<br>
+    番茄酱不仅能增加色泽，还能提升酸味，建议使用无添加的番茄酱。<br>
+    炖煮过程中需不断撇去浮沫，以保持汤的清澈。<br>
+    食用习俗：<br>
+    红菜汤通常搭配黑面包一起食用，这是俄罗斯的传统吃法。<br>
+    在俄罗斯，红菜汤常作为家庭聚餐或节日的主菜之一，象征着温暖和团聚。<br>
+</p></i></b>
+</div>
+
+
+<a href="详情页_俄罗斯族.html" class="a1">返回到俄罗斯族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

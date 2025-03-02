@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>薄饼</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform:scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/俄罗斯族_薄饼1.jpg);
+    background-position: center;
+    background-size:contain; background-repeat: no-repeat;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+
+
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>薄 &nbsp 饼</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        俄罗斯薄饼（Blini）是一种具有深厚历史和文化意义的传统食品。<br>
+        它最早起源于西伯利亚地区，最初是萨满教徒用于祭祀祖先和祈求丰收的食品。<br>
+        随着东正教传入俄罗斯，薄饼逐渐成为宗教节日中的重要食物，尤其在谢肉节（Maslenitsa）期间，薄饼象征着太阳，寓意着春天的到来和新生活的开始。<br>
+        此外，薄饼还在婚礼、圣诞节、复活节等重要节日中扮演重要角色，象征团圆和幸福。<br>
+    </b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    面粉：通常使用普通小麦面粉或低筋面粉，后者可使薄饼更柔软。<br>
+    牛奶：用于调节面糊的浓稠度，也可用酸奶或啤酒替代以增加风味。<br>
+    鸡蛋：提供蛋白质和结构，使薄饼更加松软。<br>
+    糖和盐：糖用于增加甜味，盐则提升整体风味。<br>
+    食用油：用于煎饼时防粘，也可加入少量油使面糊更顺滑。<br>
+    酵母（可选）：用于发酵面糊，使薄饼更加蓬松。<br>
+</i></b></p>
+</div>
+<div class="photos1">
+
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    准备面糊：<br>
+    在大碗中打入鸡蛋，加入糖和盐，搅拌均匀。
+    倒入牛奶，继续搅拌。<br>
+    逐渐加入面粉，搅拌至无颗粒，面糊呈流动状态。
+    如使用酵母，可将酵母溶于温牛奶中，加入面糊后静置发酵30分钟。<br>
+    煎制薄饼：<br>
+    预热平底锅，刷一层薄油。
+    倒入一勺面糊，迅速转动锅子使其均匀铺开。<br>
+    中小火煎至表面出现小气泡，边缘微微翘起时翻面，再煎片刻至金黄色。
+    重复上述步骤，直到面糊用完。<br>
+    搭配食用：<br>
+    薄饼可搭配甜馅（如果酱、蜂蜜、炼乳）或咸馅（如鱼子酱、熏肉、酸奶油）。<br>
+</p>
+</div>
+<div class="photos2">
+<img src="photos/俄罗斯族_薄饼2.jpg" alt="/">
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    制作技巧：<br>
+    面糊的浓稠度要适中，过稠会导致薄饼厚实，过稀则不易成型。<br>
+    翻面时要轻柔，避免弄破薄饼。<br>
+    煎制时火候要适中，避免煎焦。<br>
+    食用习俗：<br>
+    在俄罗斯传统中，薄饼通常由家庭主妇亲手制作，象征家庭的温暖和团聚。<br>
+    薄饼可卷起食用，也可搭配各种馅料一起享用。<br>
+    在谢肉节期间，薄饼通常与家人和朋友分享，寓意和解与祝福。<br>
+</p></i></b>
+</div>
+
+
+<a href="详情页_俄罗斯族.html" class="a1">返回到俄罗斯族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

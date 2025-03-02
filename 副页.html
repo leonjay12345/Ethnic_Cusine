@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>副页</title>
+</head>
+<style>
+    @keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+    body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    margin: 0;
+    background-color: #b4b5b5;
+    font-family: Arial, sans-serif;
+    margin-top:100vh
+    /* overflow:visible; */
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);/*这个是让排版呈现8 * 7的样式排列*/
+    gap: 20px;
+    /* animation: zoomIn 2s; */
+
+  }
+  .grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .grid-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 5px;
+    animation: zoomIn 2s;
+  }
+
+  .grid-item p {
+    margin-top: 10px;
+    text-align: center;
+    font-family: "KaiTi";
+    font-size: larger;
+     color: rgb(252, 3, 3);
+  }
+
+  .grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .grid-item:active {
+    transform: translateY(-2px);
+  }
+  .trans_to_main{
+    font-size: larger;
+    font-family: "KaiTi";
+  }
+</style>
+<!--------------------------------------------以下是body部分------------------------------------------------>
+<body>
+  <h1><b><i>选择你所中意的民族，探索他们舌尖上的秘密！！！</i></b></h1>
+    <div class="grid-container">
+        <!-- 示例图片和链接，你需要替换为实际的图片URL和链接 -->
+        <a href="详情页_蒙古族.html" class="grid-item">
+          <img src="主页、副页_photos/副页_蒙古族.jpeg" alt="蒙古族">
+          <p>蒙古族</p><!--已完成-->
+        </a>
+        <a href="详情页_藏族.html" class="grid-item">
+          <img src="主页、副页_photos/副页_藏族.jpeg" alt="蒙古族">
+          <p>藏族</p><!--已完成-->
+        </a>
+        <a href="详情页_回族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_回族.jpeg" alt="回族">
+            <p>回族</p><!--已完成-->
+          </a>
+          <a href="详情页_壮族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_壮族.jpeg" alt="壮族">
+            <p>状族</p><!--已完成-->
+          </a>
+          <a href="详情页_布依族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_布依族.jpeg" alt="布依族">
+            <p>布依族</p><!--已完成-->
+          </a>
+          <a href="详情页_彝族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_彝族.jpeg" alt="彝族">
+            <p>彝族</p><!--已完成-->
+          </a>
+          <a href="详情页_朝鲜族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_朝鲜族.jpeg" alt="朝鲜族">
+            <p>朝鲜族</p><!--已完成-->
+          </a>
+          <a href="详情页_汉族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_汉族.jpeg" alt="汉族">
+            <p>汉族</p> 
+          </a>
+          <a href="详情页_满族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_满族.jpg" alt="满族">
+            <p>满族</p><!--已完成-->
+          </a>
+          <a href="详情页_维吾尔族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_维吾尔族.jpeg" alt="维吾尔族">
+            <p>维吾尔族</p><!--已完成-->
+          </a>
+          <a href="详情页_苗族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_苗族.jpeg" alt="苗族">
+            <p>苗族</p><!--已完成-->
+          </a>
+          <a href="详情页_白族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_白族.jpg" alt="白族">
+            <p>白族</p><!--已完成-->
+          </a>
+          <a href="详情页_侗族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_侗族.jpg" alt="侗族">
+            <p>侗族</p><!--已完成-->
+          </a>
+          <a href="详情页_哈尼族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_哈尼族.jpg" alt="哈尼族">
+            <p>哈尼族</p><!--已完成-->
+          </a>
+          <a href="详情页_哈萨克族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_哈萨克族.jpg" alt="哈萨克族">
+            <p>哈萨克族</p><!--已完成-->
+          </a>
+          <a href="详情页_土家族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_土家族.jpg" alt="土家族">
+            <p>土家族</p><!--已完成-->
+          </a>
+          <a href="详情页_瑶族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_瑶族.jpg" alt="瑶族">
+            <p>瑶族</p><!--已完成-->
+          </a>
+          <a href="详情页_布朗族族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_布朗族.jpg" alt="布朗族">
+            <p>布朗族</p><!--已完成-->
+          </a>
+          <a href="详情页_傣族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_傣族.jpg" alt="傣族">
+            <p>傣族</p><!--已完成-->
+          </a>
+          <a href="详情页_东乡族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_东乡族.jpg" alt="东乡族">
+            <p>东乡族</p><!--已完成-->
+          </a>
+          <a href="详情页_高山族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_高山族.jpg" alt="高山族">
+            <p>高山族</p><!--已完成-->
+          </a>
+          <a href="详情页_仡佬族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_仡佬族.jpg" alt="仡佬族">
+            <p>仡佬族</p><!--已完成-->
+          </a>
+          <a href="详情页_柯尔克孜族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_柯尔克孜族.jpg" alt="柯尔克孜族">
+            <p>柯尔克孜族</p><!--已完成-->
+          </a>
+          <a href="详情页_傈僳族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_傈僳族.jpg" alt="傈僳族">
+            <p>傈僳族</p><!--已完成-->
+          </a>
+          <a href="详情页_毛南族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_毛南族.jpg" alt="毛南族">
+            <p>毛南族</p><!--已完成-->
+          </a>
+          <a href="详情页_纳西族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_纳西族.jpg" alt="纳西族">
+            <p>纳西族</p><!--已完成-->
+          </a>
+          <a href="详情页_羌族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_羌族.jpg" alt="羌族">
+            <p>羌族</p><!--已完成-->
+          </a>
+          <a href="详情页_撒拉族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_撒拉族.jpg" alt="撒拉族">
+            <p>撒拉族</p><!--已完成-->
+          </a>
+          <a href="详情页_水族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_水族.jpg" alt="水族">
+            <p>水族</p><!--已完成-->
+          </a>
+          <a href="详情页_土族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_土族.jpg" alt="土族">
+            <p>土族</p><!--已完成-->
+          </a>
+          <a href="详情页_佤族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_佤族.jpg" alt="佤族">
+            <p>佤族</p><!--已完成-->
+          </a>
+          <a href="详情页_景颇族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_景颇族.jpg" alt="景颇族族">
+            <p>景颇族</p><!--已完成-->
+          </a>     
+          <a href="详情页_达斡尔族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_达斡尔族.jpg" alt="达斡尔族">
+            <p>达斡尔族</p><!--已完成-->
+          </a>
+          <a href="详情页_拉祜族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_拉祜族.jpg" alt="拉祜族">
+            <p>拉祜族</p><!--已完成-->
+          </a>
+          <a href="详情页_畲族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_畲族.jpg" alt="畲族">
+            <p>畲族</p><!--已完成-->
+          </a>
+          <a href="详情页_阿昌族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_阿昌族.jpg" alt="阿昌族">
+            <p>阿昌族</p><!--已完成-->
+          </a>
+          <a href="详情页_保安族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_保安族.jpg" alt="保安族">
+            <p>保安族</p><!--已完成-->
+          </a>
+          <a href="详情页_德昂族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_德昂族.jpg" alt="德昂族">
+            <p>德昂族</p><!--已完成-->
+          </a>
+          <a href="详情页_独龙族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_独龙族.jpg" alt="独龙族">
+            <p>独龙族</p><!--已完成-->
+          </a>
+          <a href="详情页_俄罗斯族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_俄罗斯族.jpg" alt="俄罗斯族">
+            <p>俄罗斯族</p><!--已完成-->
+          </a>
+          <a href="详情页_鄂伦春族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_鄂伦春族.jpg" alt="鄂伦春族">
+            <p>鄂伦春族</p><!--已完成-->
+          </a>
+          <a href="详情页_鄂温克族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_鄂温克族.jpg" alt="鄂温克族">
+            <p>鄂温克族</p><!--已完成-->
+          </a>
+          <a href="详情页_赫哲族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_赫哲族.jpg" alt="赫哲族">
+            <p>赫哲族</p><!--已完成-->
+          </a>
+          <a href="详情页_基诺族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_基诺族.jpg" alt="基诺族">
+            <p>基诺族</p><!--已完成-->
+          </a>
+          <a href="详情页_京族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_京族.jpg" alt="京族">
+            <p>京族</p><!--已完成-->
+          </a>
+          <a href="详情页_珞巴族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_珞巴族.jpg" alt="珞巴族">
+            <p>珞巴族</p><!--已完成-->
+          </a>
+          <a href="详情页_门巴族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_门巴族.jpg" alt="门巴族">
+            <p>门巴族</p><!--已完成-->
+          </a>
+          <a href="详情页_怒族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_怒族.jpg" alt="怒族">
+            <p>怒族</p><!--已完成-->
+          </a>
+          <a href="详情页_普米族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_普米族.jpg" alt="普米族">
+            <p>普米族</p><!--已完成-->
+          </a>
+          <a href="详情页_塔吉克族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_塔吉克族.jpg" alt="塔吉克">
+            <p>塔吉克族</p><!--已完成-->
+          </a>
+          <a href="详情页_塔塔尔族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_塔塔尔族.jpg" alt="塔塔尔族">
+            <p>塔塔尔族</p><!--已完成-->
+          </a>
+          <a href="详情页_乌孜别克族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_乌孜别克族.jpg" alt="乌孜别克族">
+            <p>乌孜别克族</p><!--已完成-->
+          </a>
+          <a href="详情页_锡伯族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_锡伯族.jpg" alt="锡伯族">
+            <p>锡伯族</p><!--已完成-->
+          </a>
+          <a href="详情页_仫佬族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_仫佬族.jpg" alt="仫佬族">
+            <p>仫佬族</p><!--已完成-->
+          </a>
+          <a href="详情页_裕固族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_裕固族.jpg" alt="裕固族">
+            <p>裕固族</p><!--已完成-->
+          </a> 
+          <a href="详情页_黎族.html" class="grid-item">
+            <img src="主页、副页_photos/副页_黎族.jpg" alt="黎族">
+            <p>黎族</p>
+          </a>
+</div>
+<div class="trans_to_main">
+  <a href="主页.html">返回主页</a>
+</div>
+</body>
+</html>

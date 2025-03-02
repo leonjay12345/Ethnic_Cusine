@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>烩面</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/汉族_烩面1.jpg);
+    background-position: center; background-repeat: no-repeat;
+    background-size:contain;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>烩面</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        河南烩面是河南传统面食文化的代表，有着悠久的历史和深厚的文化底蕴。<br>
+        其起源可以追溯到唐宋时期，最初是宫廷中的御膳，后来逐渐流传至民间。<br>
+        相传，烩面的制作技艺最早由回民传入河南，后经过不断改良，成为河南地区广受欢迎的面食。<br>
+        烩面不仅是一种美食，更是河南人民情感的寄托和文化传承的象征。<br>
+    </b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    主料：高筋面粉500克、羊腿骨2斤、羊肉1斤。<br>
+    配料：海带丝、豆腐丝、木耳、粉条、香菜、枸杞、葱花、蒜苗。<br>
+    调料：盐、八角、花椒、姜片、大葱、胡椒粉、鸡精。<br>
+    工具：大锅、擀面杖、刀、汤碗。<br>
+</i></b></p>
+</div>
+<div class="photos2">
+<img src="photos/汉族_煎饼2.jpg" alt="/">
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    准备高汤：<br>
+    将羊腿骨和羊肉清洗干净，放入锅中加水煮沸，撇去浮沫。<br>
+    加入姜片、大葱、八角、花椒等香料，用小火炖煮3-5小时，直至汤色浓白。<br>
+    和面与擀面：<br>
+    高筋面粉中加入适量盐和水，揉成光滑的面团，醒发30分钟。<br>
+    将面团擀成薄片，切成宽约1厘米的面条。<br>
+    煮面与烩制：<br>
+    锅中烧水，水开后下入面条，煮至浮起后捞出，过冷水备用。<br>
+    在汤锅中加入高汤，放入海带丝、豆腐丝、木耳等配料，煮沸后加入煮好的面条。<br>
+    撒上葱花、香菜、枸杞，根据口味加入盐、胡椒粉、辣椒油等调味。<br>
+    装碗上桌：<br>
+    将烩好的面条盛入碗中，浇上热汤，放入煮好的羊肉片。<br>
+    最后撒上香菜、蒜苗，即可上桌。<br>
+</p>
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    高汤熬制：高汤是烩面的灵魂，需用小火慢炖，确保汤汁浓郁。<br>
+    面条筋道：和面时加入适量盐，使面条更有筋道。<br>
+    配料丰富：烩面的配料可以根据季节和个人口味调整，但海带丝、豆腐丝、木耳等经典配料不可少。<br>
+    火候控制：煮面时火候不宜过大，以免面条煮烂。<br>
+    调味适中：烩面的汤汁需咸淡适中，可根据个人口味添加胡椒粉、辣椒油等。<br>
+</p></i></b>
+</div>
+<a href="详情页_汉族.html" class="a1">返回汉族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

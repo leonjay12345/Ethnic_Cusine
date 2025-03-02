@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>酸奶</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/藏族_酸奶1.jpg);
+    background-position: center;
+    background-size:contain; background-repeat: no-repeat;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+     /* background-color: tan; */
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+
+
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>酸&nbsp  &nbsp    奶</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        藏族酸奶的历史可以追溯到数千年前，早在古代，藏族人民就开始驯养牦牛和绵羊，这些家畜为他们提供了丰富的奶源。<br>
+        在长期的生产实践中，藏族人民摸索出了制作酸奶的独特技艺，并将其融入日常生活和文化中。<br>
+        据史书记载，早在公元641年，文成公主入藏时，酸奶就已经是藏族饮食文化的一部分。<br>
+</b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+主要食材：新鲜牛奶（牦牛奶或羊奶）。<br>
+发酵剂：酸奶发酵剂或上一次制作的酸奶
+</i></b></p>
+</div>
+<div class="photos1">
+<img src="photos/藏族_酸奶2‘’.jpg" alt="新鲜牛奶">
+<img src="photos/藏族_酸奶3.jpg" alt="新鲜羊奶">
+<img src="photos/藏族_酸奶5.jpg" alt="酸奶">
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    准备食材：新鲜牛奶（通常为牦牛奶或羊奶）。<br>
+    加热杀菌：将牛奶倒入锅中，加热至85℃左右，保持15分钟，以杀死牛奶中的杂菌。<br>
+    冷却牛奶：将牛奶冷却至40-45℃，这是乳酸菌发酵的最佳温度。<br>
+    添加发酵剂：加入少量酸奶发酵剂（如市售酸奶或上一次制作的酸奶）。<br>
+    发酵：将混合好的牛奶倒入干净的容器中，密封后放置在温暖处发酵，一般需要6-8小时。<br>
+    冷藏：发酵完成后，将酸奶放入冰箱冷藏，使其更加浓稠。<br>
+</p>
+</div>
+<div class="photos2">
+    <img src="photos/藏族_酸奶4.jpg" alt="酸奶">
+    <img src="photos/藏族_酸奶6.jpg" alt="酸奶">
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    清洁卫生：所有工具和容器必须彻底清洁，避免污染。<br>
+    温度控制：加热和发酵温度需严格控制，过高或过低都会影响发酵效果。<br>
+    发酵时间：发酵时间根据温度和发酵剂活性调整，一般为6-8小时。<br>
+    避免金属接触：发酵过程中尽量避免使用金属容器。<br>
+    保存方法：发酵完成后，酸奶需冷藏保存，以延长保质期。<br>
+</p></i></b>
+</div>
+<div class="video_intro">
+    <h2><b><i>
+        五、视频介绍
+    </i></b></h2>
+    <p>一些网上的制作这道菜的视频，可供大家学习和参考，满足自己的食欲!</p>
+    <a href="https://www.bilibili.com/video/BV1rw41197tY/?spm_id_from=333.337.search-card.all.click">bilibili上的教程</a>
+</div>
+<a href="详情页_藏族.html" class="a1">返回到藏族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

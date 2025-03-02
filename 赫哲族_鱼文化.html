@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鱼文化</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/赫哲族_鱼文化1.jpg);
+    background-position: center; background-repeat: no-repeat;
+    background-size:contain;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+
+
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>鱼文化</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        赫哲族是中国东北地区唯一以渔业为主要生计的民族，其鱼文化源远流长，是赫哲族独特生活方式和文化传承的重要体现。<br>
+        赫哲族的鱼文化不仅包括丰富的渔业生产技术，还涵盖了饮食、服饰、艺术等多个方面，是赫哲族人与自然和谐共生的智慧结晶。<br>
+        例如，赫哲族的鱼皮制作技艺和鱼皮画，不仅是国家级非物质文化遗产，还体现了赫哲族人对自然资源的充分利用。<br>
+    </b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    赫哲族的鱼美食主要选用当地丰富的鱼类资源，常见的鱼类包括鲤鱼、狗鱼、黑鱼、鲟鱼、鳇鱼等。此外，制作鱼美食时还会用到以下辅助材料：<br>
+    调料：盐、醋、辣椒油、生姜、花椒、白胡椒等。<br>
+    蔬菜：土豆丝、绿豆芽、黄瓜、韭菜等，用于搭配生食或凉拌。<br>
+    其他：食用油、白酒（用于去腥）。
+</i></b></p>
+</div>
+<div class="photos1">
+<img src="photos/赫哲族_鱼文化2.jpg" alt="">
+<img src="photos/赫哲族_鱼文化3.jpg" alt="">
+<img src="photos/赫哲族_鱼文化4.jpg" alt="">
+<img src="photos/赫哲族_鱼文化5.jpg" alt="">
+<img src="photos/赫哲族_鱼文化6.jpg" alt="">
+<img src="photos/赫哲族_鱼文化7.jpg" alt="">
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：（多种不同的鱼）</i></b></h2>
+<p>
+   <b> 生食类:</b>
+    刹生鱼（塔拉卡）:
+    选用鲤鱼、草鱼、鲟鱼等新鲜活鱼，将鱼肉剔下，切成薄片或细丝，搭配烫过的土豆丝、绿豆芽、辣椒油、醋、盐等调料拌匀食用。<br>
+    鱼刨花（苏拉卡）:
+    将狗鱼或哲罗鱼冷冻后剥皮，刨成薄片，口感冰凉，类似冻硬的冰淇淋，入口融化后劲道十足，常搭配醋、辣椒油等调料。<br>
+    冻鱼片:
+    冬季将新鲜鱼片冷冻后切片，口感鲜美凉爽，是待客的上等下酒佳肴。<br>
+   <b> 半生食类 </b>
+    塔拉哈:
+    将鲜鱼洗净后连皮切块，用柳木棍串起来放在火上烤至六七分熟，鱼皮冒油、发出劈啪声后即可食用，口感外热内生。<br>
+   <b> 熟食类 </b>
+    炒鱼毛（它斯哈）:
+    将鲜鱼切成鱼块或鱼丝，通过蒸、炖、炒等工序，逼出水分，使鱼肉干燥蓬松，口感酥脆，可当下酒菜或零食。<br>
+    清炖鳌花:
+    将鳌花鱼处理干净后，用油煎至微微发黄，加入清水或高汤炖煮，保留鱼肉的原汁原味。<br>
+    煎小炸鱼:
+    选用小型鱼类，处理干净后腌制，放入锅中炸至鱼骨酥松，适合当小零食或下酒菜。<br>
+    狗鱼丸子汤:
+    将狗鱼脊背两侧的肉剁成肉茸，捏成丸子后煮熟，口感Q弹爽口。<br>
+    鱼肚包饭:
+    将新鲜鱼肚处理干净后，搭配米饭制成，鲜嫩香软，回味无穷。<br>
+</p>
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    选材：选用新鲜的活鱼，确保鱼肉的口感和安全性。<br>
+    处理：鱼肉需彻底清洗，去除内脏和血水，以减少腥味。<br>
+    生食安全：生食鱼片时，需确保鱼肉新鲜且经过冷冻处理，以杀灭寄生虫。<br>
+    火候控制：如制作塔拉哈时，烤制时间需控制在几分钟内，确保鱼皮烤焦但鱼肉仍保持嫩滑。<br>
+    保存方法：炒鱼毛等熟食需在干燥环境中保存，避免受潮变质。<br>
+    文化礼仪：在赫哲族全鱼宴中，鱼头需朝向客人以示尊重。<br>
+</p></i></b>
+</div>
+
+<a href="详情页_赫哲族.html" class="a1">返回到赫哲族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>油炸蜘蛛</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/布朗族_油炸蜘蛛1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>油炸蜘蛛</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        历史背景<br>
+        油炸花蜘蛛是布朗族饮食文化中的重要组成部分，具有悠久的历史。这种美食的起源与布朗族的生活环境和传统生活方式密切相关。<br>
+        布朗族主要居住在云南的高山丛林地区，花蜘蛛（学名大腹圆蛛）在当地野外林间广泛分布。<br>
+        捕捉和食用花蜘蛛是布朗族人利用当地自然资源的一种方式，这种习俗可能早在布朗族定居云南地区时就已经形成。<br>
+        传统与文化意义：<br>
+        食材获取：布朗族人在劳作时，会用树枝裹缠蜘蛛所结的网，将花蜘蛛带回。这种捕捉方式既简单又高效。<br>
+        药用价值：花蜘蛛不仅是一种食材，还具有一定的药用价值。它含有丰富的蛋白质和多种氨基酸，能解毒、治疗疮伤、蜂蝎螫伤及毒蛇咬伤。
+        在民间，花蜘蛛还被用于治疗疟疾等疾病。<br>
+        烹饪方式：油炸花蜘蛛的制作方法简单，但风味独特。将花蜘蛛烫死后去掉头脚，晒干收藏，食用时用开水浸泡回软，再放入油锅煎炸至金黄色，撒上花椒盐即可。<br>
+        文化象征：这道菜不仅是布朗族饮食文化中的独特代表，也象征着布朗族人与自然和谐共生的生活智慧。<br>
+</b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    主要是花蜘蛛。<br>
+    其他的辅料可以根据自己喜好添加。<br>
+</i></b></p>
+</div>
+<div class="photos1">
+<img src="photos/布朗族_油炸蜘蛛1.jpg" alt="/">
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    捕捉花蜘蛛：<br>
+    捕捉花蜘蛛的最佳时间是夏秋季节，尤其是十月份，此时花蜘蛛最为肥硕。<br>
+    使用长柄扫帚或木棍，将花蜘蛛连同蛛网一起裹下，避免直接用手接触。<br>
+    处理花蜘蛛：<br>
+    将捕捉到的花蜘蛛放入沸水中烫死，然后去掉头和脚，仅保留圆鼓鼓的腹部。<br>
+    用淡盐水浸泡花蜘蛛2分钟，使其回软并去除杂质。<br>
+    油炸：<br>
+    将处理好的花蜘蛛沥干水分，放入烧至七成热的菜籽油中，用小火慢煎。<br>
+    煎至花蜘蛛表皮呈金黄色，即可出锅。<br>
+    调味：<br>
+    油炸后的花蜘蛛撒上适量的盐或花椒盐，拌匀后即可食用。<br>
+</p>
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    安全第一：花蜘蛛可能带有毒性，处理时需小心，避免直接接触。<br>
+    火候控制：油温不宜过高，以免外焦里生，应保持小火慢煎。<br>
+    浸泡时间：淡盐水浸泡时间不宜过长，以回软为宜。<br>
+    食用体验：油炸后的花蜘蛛口感酥脆，香味扑鼻，但初次尝试者可能需要克服心理障碍。<br>
+</p></i></b>
+</div>
+
+<div class="video_intro">
+    <h2><b><i>
+        五、视频介绍
+    </i></b></h2>
+    <p>一些网上的制作这道菜的视频，可供大家学习和参考，满足自己的食欲!</p>
+    <a href="https://www.bilibili.com/video/BV1jG4y1t7iM/?spm_id_from=333.337.search-card.all.click">bilibili上的教程</a>
+</div>
+<a href="详情页_瑶族.html" class="a1">返回到瑶族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

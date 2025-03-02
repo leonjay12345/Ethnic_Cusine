@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>油香</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/回族_油香1.jpg);
+    background-position: center; background-repeat: no-repeat;
+    background-size:contain;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+
+
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>油 &nbsp 香 </i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        油香是回族等信仰伊斯兰教民族的传统美食，其历史可以追溯到公元610年。<br>
+        相传，穆罕默德圣人在阿拉伯半岛传播伊斯兰教义时，受到了当地居民的热烈欢迎。<br>
+        一位名叫艾卜·艾尤布的居民用油炸的面饼款待穆罕默德，穆罕默德品尝后非常喜爱，并将其命名为“油香”。<br>
+        随着伊斯兰教的传播，油香的制作技艺传入中国，成为中国穆斯林的重要饮食习俗。<br>
+        油香不仅是一种美食，更是一种具有深厚宗教和文化意义的食品。<br>
+        它象征着团结、友谊和幸福，是中国穆斯林传统的圣洁食品。<br>
+        在回族等穆斯林群体中，油香常用于以下场合：<br>
+        宗教节日：如开斋节、古尔邦节、圣纪节等，油香是不可或缺的食品。<br>
+        待客礼仪：油香常被用作招待贵客的食物，体现了对客人的尊重。<br>
+        人生礼仪：在诞生、割礼、婚礼等重要人生阶段，油香常作为仪式的一部分。<br>
+        丧葬礼俗：在丧葬仪式中，油香用于纪念亡者，表达对逝者的怀念。<br>
+    </b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    面粉：高筋面粉或普通面粉。<br>
+    辅料：酵母、盐、泡打粉、鸡蛋、植物油、红糖、蜂蜜等（根据口味选择）。<br>
+    其他：香豆粉、薄荷叶粉、肉馅等（用于特殊口味的油香）。<br>
+</i></b></p>
+</div>
+<div class="photos1">
+<img src="photos/回族_油香2.jpg" alt="面粉">
+<img src="photos/回族_油香3.jpg" alt="植物油">
+<img src="photos/回族_油香4.jpg" alt="鸡蛋">
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    <b>和面：</b><br>
+    将面粉、酵母、盐、泡打粉混合，加入温水揉成光滑的面团。<br>
+    面团发酵至两倍大后，取出排气，加入适量植物油和鸡蛋，继续揉匀。<br>
+    <b>成型：</b><br>
+    将面团分成小剂子，擀成直径约10厘米的圆饼。<br>
+    可在表面划两三道刀纹，以便炸制时更易熟透。<br>
+    <b>炸制：</b><br>
+    锅中加油烧至六七成热，放入饼坯，炸至两面金黄。<br>
+    炸好的油香色泽红润，香味浓郁。<br>
+</div>
+<div class="photos2">
+<img src="photos/回族_油香5.jpg" alt="油香">
+<img src="photos/回族_油香6.jpg" alt="油香">
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    宗教规范：制作油香时需保持清真洁净，参与制作的人需洗净双手，厨房环境需干净。<br>
+    火候控制：炸制时火候不宜过大，以免油香表皮炸焦。<br>
+    食用礼仪：食用油香时，需将其掰开食用，不能直接用嘴咬。<br>
+    分享精神：油香需与众人共食，以增强彼此之间的感情。<br>
+</p></i></b>
+</div>
+<div class="video_intro">
+    <h2><b><i>
+        五、视频介绍
+    </i></b></h2>
+    <p>一些网上的制作这道菜的视频，可供大家学习和参考，满足自己的食欲!</p>
+    <a href="https://www.bilibili.com/video/BV1ZG4y1G7z6/?spm_id_from=333.337.search-card.all.click">bilibili上的教程</a>
+</div>
+<a href="详情页_回族.html" class="a1">返回到回族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

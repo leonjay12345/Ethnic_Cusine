@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>热干面</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/汉族_热干面1.jpg);
+    background-position: center; background-repeat: no-repeat;
+    background-size:contain;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>热干面</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        热干面是武汉最具代表性的小吃之一，已有80多年的历史。<br>
+        其起源可以追溯到20世纪30年代，当时汉口长堤街的小贩李包为避免剩余面条变质，将其煮熟后淋上麻油，第二天重新加热并加入调料出售，意外受到市民欢迎，从而诞生了热干面。<br>
+        此后，热干面逐渐成为武汉早餐的标志性美食，不仅承载着武汉人的饮食习惯，更成为一种独特的文化符号，象征着武汉的烟火气和生活气息。<br>
+    </b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    主料：碱水面条（200克）。<br>
+    调料：芝麻酱、生抽、老抽、香醋、细砂糖、辣椒油、香油。<br>
+    辅料：葱花、蒜末、萝卜干、酸豆角、花生碎。<br>
+    配菜：青菜或豆芽（可选）。  <br>
+</i></b></p>
+</div>
+<div class="photos2">
+<img src="photos/汉族_热干面2.jpg" alt="/">
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    煮面：将碱水面条放入沸水中煮至八成熟（约2-3分钟），捞出后迅速过冷水，沥干水分，防止面条黏连。<br>
+    调制酱料：将芝麻酱用温水调稀，加入生抽、老抽、香醋、细砂糖，搅拌均匀。<br>
+    拌面：将煮好的面条放入碗中，倒入调好的酱料，快速搅拌均匀，让每根面条都裹满酱料。<br>
+    添加配料：撒上葱花、蒜末、萝卜干、酸豆角、花生碎，淋上辣椒油，再次拌匀。<br>
+    装盘：将拌好的热干面装入碗中，可根据个人喜好搭配烫熟的青菜或豆芽，最后撒上葱花点缀。<br>
+</p>
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    面条选择：必须使用碱水面条，这种面条劲道有嚼劲，是热干面的灵魂。<br>
+    煮面时间：煮面时间不宜过长，八成熟即可，否则面条会变得软烂。<br>
+    酱料调制：芝麻酱需用温水调稀，否则口感会过于浓稠。<br>
+    快速拌匀：面条捞出后需快速拌匀，避免黏连。<br>
+    食材新鲜：使用新鲜的面条和配菜，能更好地保证热干面的口感和营养价值。<br>
+    卫生要求：制作过程中注意手部和厨房用具的清洁，确保食品安全。<br>
+</p></i></b>
+</div>
+<a href="详情页_汉族.html" class="a1">返回汉族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

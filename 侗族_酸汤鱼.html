@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>酸汤鱼</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/苗族_酸汤鱼1.jpg);
+    background-position: center;
+    background-size:contain; background-repeat: no-repeat;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+
+
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>酸汤鱼</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        侗族酸汤鱼起源于贵州黔东南地区，那里的人民在长期缺盐的环境中创造的独特美食。<br>
+        由于地处山区，交通不便，盐巴稀缺，人们便用酸汤来代替盐，既能调味又能补充营养。<br>
+        这种独特的饮食文化逐渐演变成了如今广受欢迎的酸汤鱼。<br>
+</b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    主料：新鲜的稻花鲤鱼、草鱼或鲶鱼。<br>
+    辅料：红酸汤（或白酸汤）、西红柿、青椒、红椒、洋葱、姜、蒜、葱花、香菜、木姜子、鱼腥草等。<br>
+    调料：盐、辣椒粉、胡椒粉、食用油。<br>
+</i></b></p>
+</div>
+<div class="photos1">
+<img src="photos/苗族_酸汤鱼2.jpg" alt="/">
+<img src="photos/苗族_酸汤鱼3.jpg" alt="/">
+<img src="photos/苗族_酸汤鱼4.jpg" alt="/">
+<img src="photos/苗族_酸汤鱼5.jpg" alt="/">
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+准备酸汤（可选）：<br>
+红酸汤：将西红柿切块，放入锅中煮软，加入适量盐和辣椒粉，煮成浓稠的汤汁。<br>
+白酸汤：将糯米煮成稀饭，自然发酵后过滤，取酸汤汁。<br>
+处理鱼：<br>
+将鱼洗净，去鳞、去内脏、去鳃，切成块或片，用盐和胡椒粉腌制10分钟。<br>
+炒制香料：<br>
+锅中加油，放入姜片、蒜末、洋葱丝、青椒丝、红椒丝等香料炒香。<br>
+煮鱼：<br>
+将酸汤倒入锅中，加入适量清水，大火烧开后放入鱼块，煮至鱼肉熟透。<br>
+调味与装盘：<br>
+根据口味加入适量盐、辣椒粉、胡椒粉调味，撒上葱花、香菜即可。<br>
+</p>
+</div>
+<div class="photos2">
+<img src="photos/苗族_酸汤鱼6.jpg" alt="/">
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    酸汤选择：酸汤是酸汤鱼的灵魂，建议使用自制的红酸汤或白酸汤，避免使用市售的劣质酸汤。<br>
+    鱼的选择：选用新鲜的活鱼，如稻花鲤鱼、草鱼或鲶鱼，肉质细嫩。<br>
+    火候控制：煮鱼时火候不宜过大，以免鱼肉煮老。<br>
+    酸辣平衡：根据个人口味调整酸汤和辣椒的用量，使酸味和辣味达到平衡。<br>
+</p></i></b>
+</div>
+<div class="video_intro">
+    <h2><b><i>
+        五、视频介绍
+    </i></b></h2>
+    <p>一些网上的制作这道菜的视频，可供大家学习和参考，满足自己的食欲!</p>
+    <a href="https://www.bilibili.com/video/BV1zW411S7KC/">bilibili上的教程</a>
+</div>
+<a href="详情页_侗族.html" class="a1">返回到侗族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>
