@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>艾草粑粑</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/瑶族_艾草粑粑1.jpg);
+    background-position: center;
+    background-size:contain; background-repeat: no-repeat;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+
+
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>竹筒饭</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        艾叶粑粑是一种传统美食，其起源与清明节和寒食节的习俗密切相关。<br>
+        据《周礼》记载，早在两千多年前的周朝，就有“仲春以木铎循火禁于国中”的法规，百姓在寒食节期间熄炊，食用冷食。<br>
+        在寒食节的传统食品中，有一种“青精饭”，据《琐碎录》记载，蜀地人在寒食日会用艾叶染饭，色青而有光。<br>
+        这种习俗逐渐演变为清明节食用艾叶粑粑的风俗，寓意祛风驱邪、健康长寿。<br>
+</b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    艾叶：新鲜艾叶半斤（200克左右），选择嫩叶部分。<br>
+    糯米粉：500克。<br>
+    粘米粉：100克（可选，增加口感）。<br>
+    馅料：<br>
+    花生2两（约100克）。
+    黑芝麻2两（约100克）。
+    白砂糖或黄糖适量。
+    猪油少许（可选，增加香味）。<br>
+    其他：<br>
+    水400克左右。
+    食用小苏打2克（用于保持艾叶绿色）。
+    柚子叶或玉米叶若干（用于蒸制时垫底，防止粘锅）。<br>
+</i></b></p>
+</div>
+<div class="photos1">
+<img src="photos/瑶族_艾草粑粑2.jpg" alt="2">
+<img src="photos/瑶族_艾草粑粑3.jpg" alt="3">
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    处理艾叶：<br>
+    将艾叶洗净，浸泡24小时去除苦味。<br>
+    将泡好的艾叶放入开水中，加入1克食用小苏打，煮2-3分钟，捞出后放入冷水中浸泡1小时。<br>
+    挤干艾叶中的水分，切成碎末。<br>
+    制作面团：<br>
+    将艾叶碎放入搅拌机中，加入适量水，打成艾叶汁。<br>
+    将糯米粉和粘米粉混合，倒入艾叶汁，揉成不粘手、略干的面团。<br>
+    准备馅料：<br>
+    将花生和黑芝麻炒香，冷却后放入厚塑料袋中，用擀面杖压碎。<br>
+    将压碎的花生和黑芝麻与白砂糖或黄糖混合均匀，加入少许猪油拌匀。<br>
+    包制艾叶粑粑：<br>
+    摘取适量面团，捏成扁圆形，放入少许馅料，然后四边向中间捏紧，将接口处捏实，做成球形或椭圆形。<br>
+    将包好的艾叶粑粑放在柚子叶或玉米叶上，防止粘锅。<br>
+    蒸制：<br>
+    将包好的艾叶粑粑放入蒸锅，大火蒸10-15分钟。<br>
+    蒸好后，关火焖2分钟，即可取出食用。<br>
+</p>
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    艾叶处理：浸泡和焯水可以有效去除艾叶的苦味，同时保持其绿色。<br>
+    面团软硬度：面团不宜过软，否则不易成型。<br>
+    馅料比例：根据个人口味调整馅料的比例，确保甜度适中。<br>
+    蒸制时间：蒸制时间不宜过长，否则艾叶粑粑会变得过硬。<br>
+</p></i></b>
+</div>
+
+<div class="video_intro">
+    <h2><b><i>
+        五、视频介绍
+    </i></b></h2>
+    <p>一些网上的制作这道菜的视频，可供大家学习和参考，满足自己的食欲!</p>
+    <a href="https://www.bilibili.com/video/BV1cz4y127AL/?spm_id_from=333.337.search-card.all.click">bilibili上的教程</a>
+</div>
+<a href="详情页_瑶族.html" class="a1">返回到瑶族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

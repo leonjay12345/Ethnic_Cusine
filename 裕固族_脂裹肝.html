@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        脂裹肝
+    </title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/裕固族_脂裹肝1.jpg);
+    background-position: center; background-repeat: no-repeat;
+    background-size:contain;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>锁阳饼</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        锁阳饼是裕固族的传统美食，其制作原料锁阳是一种生长在沙漠中的寄生草本植物，具有固精壮阳、补益身体的药用价值。<br>
+        锁阳饼不仅是一种美食，还承载着裕固族对自然的敬畏和对健康的追求。<br>
+        它体现了裕固族在艰苦环境中对自然资源的利用和传承，是裕固族饮食文化的重要组成部分。<br>
+    </b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    主料：锁阳（新鲜或晒干）、面粉。<br>
+    辅料：白糖、植物油。<br>
+    工具：蒸锅、擀面杖、平底锅。<br>
+</i></b></p>
+</div>
+<div class="photos2">
+<img src="photos/裕固族_锁阳饼2.jpg" alt="/">
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    处理锁阳：将新鲜锁阳洗净，用木片刮去红棕色外皮，露出白色肉质。如果使用干锁阳，需先浸泡至软。<br>
+    蒸煮锁阳：将处理好的锁阳放入蒸锅中蒸熟，取出后用手捏烂。<br>
+    调制面团：将蒸熟的锁阳与面粉按一定比例混合，加入适量白糖，揉成面团。<br>
+    成型与烙制：将面团分成小剂子，擀成薄饼，放入平底锅中，用小火煎至两面金黄。<br>
+</p>
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    锁阳选择：锁阳有甜味和苦涩之分，应选择甜味的锁阳，避免苦涩影响口感。<br>
+    锁阳处理：锁阳外皮较硬，需彻底刮净，否则影响口感。<br>
+    火候控制：煎饼时火候要适中，避免外焦里生。<br>
+    保存方法：锁阳饼可常温保存，但需密封，避免受潮。<br>
+</p></i></b>
+</div>
+<a href="详情页_裕固族.html" class="a1">返回裕固族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

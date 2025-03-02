@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>五色糯米饭</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/壮族_五色糯米饭1.jpg);
+    background-position: center;
+    background-size:contain; background-repeat: no-repeat;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+     /* background-color: tan; */
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+
+
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>五色糯米饭</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        五色糯米饭是广西壮族的传统风味小吃，因糯米饭呈现红、紫、黄、黑、白五种颜色而得名，又称“乌饭”“青精饭”或“花米饭”。<br>
+        其历史可追溯至数百年前，最初是作为一种祭祀食品，用以表达对祖先的敬意。<br>
+        在壮族民间，有两个典型传说：一是为纪念古代壮族英雄韦特桂，人们在农历三月初三制作五色糯米饭祭祀他；<br>
+        二是源于一个孝顺青年特侬用枫叶染黑糯米以防止猴子抢食的故事。<br>
+        五色糯米饭不仅是一道美食，更是一种文化的传承，象征着吉祥如意、五谷丰登、团圆和谐。<br>
+        在壮族的传统节日如“三月三”或清明节期间，家家户户都会制作五色糯米饭，用于祭祀祖先、款待亲友，寓意生活的五彩缤纷和甜美幸福。<br>
+        此外，五色糯米饭的食材多为天然植物，具有一定的药用价值，如红蓝草有生血行血作用，黄花能清热凉血，枫叶可健筋骨、益肠胃。<br>
+</b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    糯米：2000克（根据颜色需求分五等份）。<br>
+    天然染料植物：<br>
+    黑色：枫叶。<br>
+    红色：红蓝草。<br>
+    黄色：黄花（密蒙花）或黄栀子。<br>
+    紫色：紫兰草。<br>
+</i></b></p>
+</div>
+<div class="photos1">
+<img src="photos/壮族_五色糯米饭2.jpg" alt="糯米">
+<img src="photos/壮族_五色糯米饭3.jpg" alt="枫叶">
+<img src="photos/壮族_五色糯米饭4.jpg" alt="红蓝草">
+<img src="photos/壮族_五色糯米饭5.jpg" alt="黄花">
+<img src="photos/壮族_五色糯米饭6.jpg" alt="紫兰草">
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    <b>准备染料：</b><br>
+    黑色：将枫叶捣碎、风干后，用冷水浸泡24-48小时，过滤后得到黑色汁液。<br>
+    红色、黄色、紫色：将红蓝草、黄花、紫兰草分别放入水中煮沸，小火煮3-5分钟，过滤后得到染色汁液。<br>
+    <b>浸泡糯米：</b><br>
+    将糯米分成五份，分别放入不同颜色的染料水中浸泡2-3小时，白色糯米直接用清水浸泡。<br>
+    <b>蒸煮：</b><br>
+    将浸泡好的糯米沥干，分别放入蒸锅中，加入适量水和少许食用油，蒸煮40分钟左右，直至糯米软糯。<br>
+    <b>晾凉与造型：</b><br>
+    蒸煮完成后，将五色糯米饭取出晾凉，可根据喜好用模具压成不同形状。<br>
+</p>
+</div>
+<div class="photos2">
+    <img src="photos/壮族_五色糯米饭7.jpg" alt="饭">
+    <img src="photos/壮族_五色糯米饭8.jpg" alt="饭">
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    浸泡时间：糯米需提前浸泡，且染料水需完全冷却后再放入糯米，以保证上色均匀。<br>
+    黑色糯米：黑色糯米制作较为复杂，需提前两天准备枫叶染料，且浸泡时间较长。<br>
+    天然染料：使用天然植物染料时，建议用无油铁锅煮，颜色会更浓郁。<br>
+    蒸煮工具：蒸煮时最好使用木桶或在蒸笼底部铺上水瓜心，防止糯米因蒸汽聚集而软烂。<br>
+    糯米处理：糯米无需提前清洗，直接放入染料水中，否则会影响上色效果。<br>
+</p></i></b>
+</div>
+<div class="video_intro">
+    <h2><b><i>
+        五、视频介绍
+    </i></b></h2>
+    <p>一些网上的制作这道菜的视频，可供大家学习和参考，满足自己的食欲!</p>
+    <a href="https://www.bilibili.com/video/BV1t84y1T7wX/?spm_id_from=333.337.search-card.all.click">bilibili上的教程</a>
+</div>
+<a href="详情页_壮族.html" class="a1">返回到壮族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

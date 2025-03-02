@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>竹筒煨饭</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/壮族_竹筒饭1.jpg);
+    background-position: center;
+    background-size:contain; background-repeat: no-repeat;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+
+
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>竹筒煨饭</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        竹筒煨饭是一种具有深厚文化底蕴的传统美食，起源于我国南方少数民族地区。<br>
+        几百年前，当地村民就利用竹子作为天然的“锅”来烹饪米饭。<br>
+        这种烹饪方式不仅方便携带，还赋予了米饭独特的竹香，成为山林狩猎或劳作时的便携食物。<br>
+        竹筒煨饭不仅是美食，更是一种文化传承。<br>
+        它体现了少数民族与自然和谐共生的生活智慧，同时具有独特的风味和营养价值。<br>
+        竹子本身富含多种微量元素和维生素，与米饭结合后，不仅口感软糯，还带有竹子的清香。<br>
+        此外，竹筒煨饭也常用于招待客人，象征着热情好客和对生活的热爱。<br>
+</b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    竹筒：选择质地坚实、无裂缝的新鲜竹筒，直径约6-7厘米，长度约8-9厘米。<br>
+    大米或糯米：500克，提前浸泡2-3小时。<br>
+    配料：可根据个人口味选择，如腊肉、胡萝卜丁、玉米粒、香菇丁、香肠等。<br>
+    调料：盐、生抽、食用油、胡椒粉等。<br>
+</i></b></p>
+</div>
+<div class="photos1">
+<img src="photos/壮族_竹筒饭2.jpg" alt="竹筒">
+<img src="photos/壮族_五色糯米饭2.jpg" alt="糯米">
+<img src="photos/壮族_竹筒饭3.jpg" alt="腊肉丁">
+<img src="photos/壮族_竹筒饭4.jpg" alt="玉米粒">
+<img src="photos/壮族_竹筒饭5.jpg" alt="香菇丁">
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    <b>竹筒处理：</b><br>
+    将竹筒洗净，用盐水浸泡4小时以上，然后用清水煮沸半小时，捞出晾干。<br>
+   <b> 准备米饭和配料：</b><br>
+    将浸泡好的大米或糯米沥干水分，与配料混合，加入适量盐、生抽、食用油和胡椒粉调味。<br>
+    <b>装入竹筒：</b>
+    将调好味的米饭和配料填入竹筒中，压实，加入适量清水（水位约至竹筒的八分满）。<br>
+    <b>烹饪：</b>
+    将竹筒放入烤箱（210℃烤40分钟）或蒸锅中（大火蒸25-30分钟），直至米饭熟透。<br>
+    <b>食用：</b>
+    熟后取出竹筒，用刀轻轻敲打竹筒，使米饭与竹壁分离，然后剖开竹筒，即可食用。<br>
+</p>
+</div>
+<div class="photos2">
+    <img src="photos/壮族_竹筒饭6.jpg" alt="饭">
+    <img src="photos/壮族_竹筒饭7.jpg" alt="饭">
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    竹筒选择：竹筒要厚实且无裂缝，避免在烹饪过程中破裂。<br>
+    浸泡处理：竹筒需用盐水浸泡并煮沸，以去除杂质并增加竹筒的韧性。<br>
+    米饭浸泡：大米或糯米需提前浸泡2-3小时，这样煮出的米饭更软糯。<br>
+    火候控制：如果用明火烤制，需不断翻转竹筒，使其受热均匀。<br>
+    水量控制：竹筒内的水量不宜过多，一般至竹筒的八分满即可。<br>
+    竹筒封口：竹筒口可用竹叶或锡纸封住，防止水分流失<br>
+</p></i></b>
+</div>
+<div class="video_intro">
+    <h2><b><i>
+        五、视频介绍
+    </i></b></h2>
+    <p>一些网上的制作这道菜的视频，可供大家学习和参考，满足自己的食欲!</p>
+    <a href="https://www.bilibili.com/video/BV11i4y1t7Km/?spm_id_from=333.337.search-card.all.click">bilibili上的教程</a>
+</div>
+<a href="详情页_壮族.html" class="a1">返回到壮族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

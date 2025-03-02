@@ -1,0 +1,197 @@
+<!doctype  html>
+<html>
+    <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>民族特色文化美食(首页)</title>
+<style>
+@keyframes headslide {
+    from {
+        transform:  translateX(-100%);
+        opacity: 0;;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.photos img{
+  animation-name: rotate;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+/* 使用动画 */
+/* .animated-image {
+    animation: zoomIn 2s;
+} */
+#head1 { 
+    color :rgba(5, 231, 247, 0.705);
+    font-size: 100px;
+    text-shadow: 5px 5px 5px #dee910;
+    text-align: center;
+    font-family: 'KaiTi';}
+#head2 {    
+    color :rgba(5, 231, 247, 0.705);
+    font-size: 100px;
+    text-shadow: 5px 5px 5px #ff2a00;
+    text-align: center;
+    font-family: 'KaiTi';
+}
+.subheading{
+    background-color: chartreuse;
+    border: 1px solid #e91010;
+    padding:20px;
+    margin: 10px;
+    width: 300px;
+    float:right;
+}
+p {
+    font-family: "KaiTi";
+    font-size:large;
+    font-style: oblique;
+    color: #ff2a00;
+}
+.theme{
+    background-image:url(主页、副页_photos/主页_main.jpeg);
+    background-size:auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    animation:headslide 1s ease-in-out
+}
+.main p{
+float: left;
+animation: zoomIn 2s;
+font-family: "YouYuan";
+text-decoration:double;
+background-color: #fbeded; /* 设置背景颜色 */
+border-left: 3px solid #fc0606; /* 设置左边框 */
+padding: 10px; /* 设置内边距 */
+font-size: xx-large;
+}
+.photos{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 20px; /* 设置图片之间的间隔 */
+    float: left;
+}
+.photos img{
+    width: 230px; /* 根据容器宽度调整图片大小 */ 
+    height: 230px; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    /* animation: rotate 10s linear infinite; */
+    border-radius: 50%;
+}
+.intro_us{
+    float: left;
+}
+.intro_us p{
+    float: left;
+animation: zoomIn 2s;
+font-family: "YouYuan";
+text-decoration:double;
+background-color: #fbeded; /* 设置背景颜色 */
+border-right: 3px solid #fc0606; /* 设置左边框 */
+padding: 10px; /* 设置内边距 */
+font-size: xx-large;
+}
+.jump_button {
+    float: left;
+    font-size: xx-large;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    transition: color 0.3s, border-color 0.3s;
+  }
+
+  .jump_button:hover {
+    color: #007bff;
+    border-color: #0056b3;
+  }
+
+  .jump_button:active {
+    color: #0056b3;
+  }
+</style>
+</head>
+<!--*************************************************以下是body部分*******************************************************-->
+<body>
+<div class="theme">
+<h1 id="head1"><i>民族食萃</i></h1>
+<h1 id="head2"><i>匠心材韵</i></h1>
+<div class="subheading">
+<p><i><b> -中华各民族特色文化美食中的烟火气</b></i></p>
+</div>
+</div>
+<div class="main">
+<p>
+    古老而神奇的东方大地，5000多年的悠久历史，孕育出了勤劳而朴素的中国人民。在这片土地上，56个民族共同编织了一幅绚丽多彩的饮食文化图卷。<br>
+    <b>我们对各民族特色美食的热爱，就如同对这片古老土地的深深眷恋。</b><br>
+    这是味蕾上的触动，也是心灵上的抚慰。<br>
+    无论深处异国还是他乡，当品尝上一口这些美食的时候，就仿佛回到了离开许久的故乡，与自己的家人申请的拥抱，互诉思情。<br>
+    <b>中国人的深刻情感，蕴藏在这多种多样的民族特色美食中。</b><br>
+    汉族的饺子，圆润饱满，寓意着团圆和美满，每一口都是家的味道；<br>
+    藏族的酥油茶，浓郁醇厚，仿佛能抵御高原的严寒，给人以温暖的力量；<br>
+    维吾尔族的大盘鸡，那鲜红的辣椒与金黄的鸡肉交织，是热情与活力的象征；<br>
+    壮族的五色糯米饭，那斑斓的色彩，如同壮乡的山水，让人心旷神怡；<br>
+    蒙古族的手扒肉，粗犷中带着草原的豪迈；回族的清真食品，纯净中透着信仰的虔诚；<br>
+    朝鲜族的冷面，清凉中带着一丝酸甜，如同夏日里的一缕清风；<br>
+    苗族的酸汤鱼，酸辣中带着鲜美，如同苗族人民的热情好客；<br>
+    <b>每一道菜，都是一个故事，每一口食物，都是一段历史。<br>
+    这些美食，如同中华民族的血脉，流淌在每一个中国人的心中，在品尝的同时，也能感受到那份来自祖先的智慧和对美好生活的向往。</b><br>
+</p>
+<div class="photos">
+    <img src="主页、副页_photos/主页1.jpg" alt="饺子">
+    <img src="主页、副页_photos/主页2.jpg" alt="酥油茶">
+    <img src="主页、副页_photos/主页3.jpg" alt="大盘鸡">
+    <img src="主页、副页_photos/主页4.jpg" alt="五色糯米饭">
+    <img src="主页、副页_photos/主页5.jpg" alt="石锅拌饭">
+    <img src="主页、副页_photos/主页6.jpg" alt="酸汤鱼">
+</div>
+</div>
+<div class="intro_us">
+<h1><b><i>关于我们(About Us)</i></b></h1>
+<p>
+    本网站旨在传承中华民族优秀传统文化<br>
+   <b> 56个民族56朵花，各民族像石榴籽一样团结在一起。
+    56个民族遍布华夏大地，横跨整个中国。
+    我们的美食由我们共同制作。</b><br>
+    我们搜集了一些资料，查找了很多民族特色美食。
+    我们给出了制作这些美食时，所用的食材，制作方法，注意事项，以及一些网上可以找到的视频教程。<br>
+   <b> 特别提醒：<br>
+    为了参加比赛，我们在短时间内学习并利用所学的知识制作了这些网页。
+    这是一个静态网站，由于显然易见的原因，这个网站制作风格以简约为主。<br>
+    难免有所不足，我们期待您的指出与改正。
+    我们会在接下来的时间完善，并加入更完整的元素和功能。<br>
+   </b>
+   <b>特别鸣谢:
+    视觉中国，为我们提供了大量的图片。<br>
+    bilibili网站，为我们提供大量的制作菜品的视频。<br>
+    kimi智能ai助手，为我们搜集资料提供了极大的方便。
+   </b>
+</p>
+</div>
+<div class="jump_button">
+<a href="副页.html">点击这里开启一段民族特色美食之旅吧！</a>
+</div>
+
+
+
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>烤乳猪</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/彝族_烤乳猪1.jpg);
+    background-position: center;
+    background-size:contain; background-repeat: no-repeat;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+
+
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>烤乳猪</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        烤乳猪是彝族的传统美食，尤其在楚雄彝族自治州等地具有悠久的历史。<br>
+        它不仅是彝族人民在重要节日和庆典上的传统美食，也是招待远方贵宾的特色菜肴。<br>
+        烤乳猪的制作技艺被列为楚雄彝族自治州州级非物质文化遗产代表性项目，体现了这道料理在当地文化中的重要地位。<br>
+    </b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    主料：选择3-4个月大的本地乳猪1头（约10-15斤）。<br>
+    调料：盐、五香粉、八角末、白糖、豆酱、甜酱、红腐乳、麻酱、花生油、汾酒、蒜泥、蜂蜜、白醋、糯米酒。<br>
+    辅料：葱段、姜片。<br>
+</i></b></p>
+</div>
+<div class="photos1">
+<img src="photos/彝族_烤乳猪2.jpg" alt="乳猪">
+<img src="photos/回族_羊肉泡馍4.jpg" alt="调料">
+<img src="photos/彝族_烤乳猪3.jpg" alt="蜂蜜">
+<img src="photos/彝族_烤乳猪4.jpg" alt="姜片">
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    <b>处理乳猪：</b>
+    将乳猪宰杀后，去除内脏和骨头，洗净备用。
+    在乳猪身上均匀地戳一些小孔，以便腌制时入味。
+    <b>腌制：</b>
+    用五香精盐均匀涂抹猪内腔，腌制30分钟。
+    将豆酱、腐乳、麻酱、汾酒、蒜泥、白糖等调料混合均匀，涂抹在猪内腔，腌制20分钟。
+    <b>烫皮与吹风：</b>
+    用开水均匀淋在猪皮上，让其表皮绷紧。
+    将猪皮涂上糖醋，倒挂在风房里，用风扇吹一晚，至吹干水分、猪身凉透。
+   <b> 烤制：</b>
+    将木炭放入烤炉点燃，乳猪上炉用小火烤15分钟，至猪皮呈大红色时离火。
+    烤制过程中需不断翻动乳猪，确保受热均匀。
+    猪皮在烤制过程中会出现气泡，需用尖刀刺穿，确保上色均匀。
+    <b>上色：</b>
+    烤制过程中多次涂抹由蜂蜜、酱油等调制的上色料，使乳猪皮金黄酥脆。
+    <b>出炉：</b>
+    烤制完成后，将乳猪从烤箱中取出，放置片刻让肉质稍微松弛，然后即可切片享用。
+    制作时的注意事项
+</p>
+</div>
+<div class="photos2">
+<img src="photos/彝族_烤乳猪5.jpg" alt="zhu">
+<img src="photos/彝族_烤乳猪6.jpg" alt="zhu">
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    选材：选择健康的乳猪，体重约为5-7公斤，肉质鲜嫩，皮薄肉厚。<br>
+    火候控制：烤制时需严格控制火候，避免乳猪烤焦。<br>
+    腌制均匀：腌制时需确保调料均匀涂抹，以便入味。<br>
+    烤制均匀：烤制过程中需不断翻动乳猪，确保受热均匀。<br>
+    避免起泡：烤制过程中若发现猪皮起泡，需用尖刀刺穿，避免影响外观。<br>
+</p></i></b>
+</div>
+<div class="video_intro">
+    <h2><b><i>
+        五、视频介绍
+    </i></b></h2>
+    <p>一些网上的制作这道菜的视频，可供大家学习和参考，满足自己的食欲!</p>
+    <a href="https://www.bilibili.com/video/BV1L4411K7gZ/?spm_id_from=333.337.search-card.all.click">bilibili上的教程</a>
+</div>
+<a href="详情页_彝族.html" class="a1">返回到彝族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

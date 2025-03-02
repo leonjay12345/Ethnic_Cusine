@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>五色糯米饭</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/壮族_螺蛳粉1.jpg);
+    background-position: center; background-repeat: no-repeat;
+    background-size:contain;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+     /* background-color: tan; */
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+
+
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>特色螺蛳粉</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        螺蛳粉起源于20世纪70年代末的广西柳州，虽然历史较短，但其根基——嗍螺和米粉在柳州已有悠久的历史。<br>
+        据考古发现，早在2万年前，柳州的“柳江人”就开始捕捞螺类食用。关于螺蛳粉的起源，有几种说法：<br>
+        夜市起源说：上世纪七八十年代，柳州谷埠街夜市的摊贩将螺蛳汤与米粉结合，形成了螺蛳粉的雏形。<br>
+        杂货店起源说：1980年代中，解放南路的一家杂货店将干切粉放入螺蛳汤中煮制，后来逐渐发展为螺蛳粉。<br>
+</b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    米粉：选用优质干米粉或鲜米粉。<br>
+    螺蛳：新鲜螺蛳，提前浸泡去泥沙。<br>
+    配料：酸笋、酸豆角、花生、腐竹、木耳、黄花菜、青菜等。<br>
+    调料：八角、桂皮、草果、香叶、花椒、南腐乳、辣椒油、盐、鸡精、料酒等。<br>
+    猪大骨：用于熬制汤底。<br>
+</i></b></p>
+</div>
+<div class="photos1">
+<img src="photos/壮族_螺蛳粉2.jpg" alt="米线">
+<img src="photos/壮族_螺蛳粉3.jpg" alt="螺蛳">
+<img src="photos/壮族_螺蛳粉4.jpg" alt="花生">
+<img src="photos/壮族_螺蛳粉5.jpg" alt="青菜">
+<img src="photos/壮族_螺蛳粉6.jpg" alt="腐竹">
+<img src="photos/壮族_螺蛳粉7.jpg" alt="腐乳">
+<img src="photos/壮族_螺蛳粉8.jpg" alt="桂皮八角">
+<img src="photos/壮族_螺蛳粉9.jpg" alt="料酒">
+<img src="photos/壮族_螺蛳粉10.jpg" alt="小料">
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    <b>准备汤底：</b><br>
+    将猪大骨、黄豆、老姜放入锅中，加水煮沸后转小火炖煮2小时。<br>
+    炒香八角、桂皮、草果、香叶等香料，加入螺蛳，再放入南腐乳、料酒、盐等调料，炒匀后倒入骨汤中，继续熬煮2小时。<br>
+    <b>处理米粉：</b><br>
+    干米粉提前用冷水浸泡3小时，再用热水烫软后捞出，放入冷水中备用。<br>
+    <b>炒制配料：</b><br>
+    酸笋、酸豆角切段，花生炸香，腐竹炸至金黄。<br>
+<b>  煮制：</b><br>
+    将泡好的米粉放入开水中烫熟，捞出放入碗中。<br>
+    加入烫好的青菜、酸笋、酸豆角、腐竹、花生等配料。<br>
+    <b>浇汤：</b><br>
+    将熬好的螺蛳汤浇在米粉上，根据口味加入辣椒油、香菜等。<br>
+</p>
+</div>
+<div class="photos2">
+<img src="photos/壮族_螺蛳粉10.jpg" alt="螺蛳粉">
+<img src="photos/壮族_螺蛳粉11.jpg" alt="螺蛳粉">
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    食材新鲜：螺蛳和米粉必须新鲜，否则会影响口感和风味。<br>
+    汤底熬制：熬汤时火候要适中，小火慢炖才能熬出浓郁的汤底。<br>
+    酸笋处理：酸笋是螺蛳粉的灵魂，需提前切好，炒制时充分释放酸味。<br>
+    米粉烫制：米粉烫制时间不宜过长，否则会失去弹性。<br>
+    配料多样：可以根据个人口味调整配料和调料的比例。<br>
+</p></i></b>
+</div>
+<div class="video_intro">
+    <h2><b><i>
+        五、视频介绍
+    </i></b></h2>
+    <p>一些网上的制作这道菜的视频，可供大家学习和参考，满足自己的食欲!</p>
+    <a href="https://www.bilibili.com/video/BV1St411K7TF/?spm_id_from=333.337.search-card.all.click">bilibili上的教程（李子柒亲自制作）</a>
+</div>
+<a href="详情页_壮族.html" class="a1">返回到壮族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

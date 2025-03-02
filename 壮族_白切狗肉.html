@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>白切狗肉</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/壮族_白切狗肉1.jpg);
+    background-position: center;
+    background-size:contain; background-repeat: no-repeat;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+
+
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>白切狗肉</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        白切狗肉是一种具有悠久历史的传统美食，尤其在广东雷州半岛、广西宾阳等地广受欢迎。<br>
+        其历史可以追溯到南宋时期，当时白切狗肉已成为一种民间传统食俗。<br>
+        在广西宾阳，白切狗肉的起源与王阳明平定叛乱有关，当时士兵们在食用狗肉时，因急不可耐，将涮好的狗肉切成小块蘸料食用，后来这种吃法逐渐演变为白切狗肉。<br>
+</b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    主料：狗肉（后腿肉最佳）。<br>
+    配料：姜片、葱段、八角、桂皮、草果、花椒、干辣椒等。<br>
+    调料：盐、生抽、老抽、蚝油、白糖、醋、辣椒油、香菜、蒜末等。<br>
+</i></b></p>
+</div>
+<div class="photos1">
+<img src="photos/壮族_白切狗肉2.jpg" alt="狗肉">
+<img src="photos/壮族_白切狗肉3.jpg" alt="小料">
+<img src="photos/壮族_白切狗肉4.jpg" alt="小料">
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+   <b> 处理狗肉：</b><br>
+    将狗肉洗净，切成大块，放入清水中浸泡3-4小时，去除血水。<br>
+    将狗肉放入开水中焯水，撇去浮沫，捞出备用。<br>
+<b> 煮制狗肉：</b><br>
+    锅中加入适量清水，放入姜片、葱段、八角、桂皮、草果、花椒等香料。<br>
+    将焯水后的狗肉放入锅中，大火煮开后转小火炖煮1-2小时，直至狗肉熟透。<br>
+  <b>  冷却切片：</b><br>
+    煮好的狗肉捞出，放入冰水中快速冷却，使肉质更加紧实。<br>
+    冷却后的狗肉切成薄片，装盘。<br>
+  <b>  调制蘸料：</b><br>
+    将蒜末、辣椒末、香菜末放入碗中，加入热油爆香。<br>
+    加入适量生抽、蚝油、白糖、醋、辣椒油等调料，搅拌均匀。<br>
+   <b> 食用：</b><br>
+    将切好的狗肉片蘸上调好的蘸料食用。<br>
+</p>
+</div>
+<div class="photos2">
+    <img src="photos/壮族_白切狗肉5.jpg" alt="狗肉">
+    <img src="photos/壮族_白切狗肉6.jpg" alt="狗肉">
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    选材：选择新鲜的狗肉，最好选用后腿肉，肉质更紧实。<br>
+    浸泡：狗肉需提前浸泡，去除血水和腥味。<br>
+    煮制：煮狗肉时加入适量香料，可去腥增香。<br>
+    冷却：煮好的狗肉需放入冰水中快速冷却，这样切片后口感更佳。<br>
+    蘸料：蘸料可根据个人口味调整，但蒜末和辣椒是必不可少的。<br>
+    禁忌：狗肉性温，热病后、阴虚火旺者不宜食用。<br>
+</p></i></b>
+</div>
+<div class="video_intro">
+    <h2><b><i>
+        五、视频介绍
+    </i></b></h2>
+    <p>一些网上的制作这道菜的视频，可供大家学习和参考，满足自己的食欲!</p>
+    <a href="https://www.bilibili.com/video/BV1HB4y1g7sB/?spm_id_from=333.337.search-card.all.click">bilibili上的教程</a>
+</div>
+<a href="详情页_壮族.html" class="a1">返回到壮族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

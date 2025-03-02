@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>竹筒饭</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/瑶族_竹筒饭1.jpg);
+    background-position: center;
+    background-size:contain; background-repeat: no-repeat;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+
+
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>竹筒饭</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        竹筒饭是一种具有悠久历史的传统美食，最早可追溯至宋代。<br>
+        据宋代范成大《桂海虞衡志》记载：“竹釜，瑶人所用。截大竹筒以当铛鼎，食物熟而竹不熸，盖物理自尔，非异也。”<br>
+        这表明瑶族人民很早就开始使用竹筒作为烹饪工具。竹筒饭最初是瑶族人民在野外劳作时发明的一种简便烹饪方式，方便携带和制作。<br>
+
+</b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    竹筒：选择两年以上的老竹子，这样的竹子水分多、耐烧，烧出来的饭更香。竹筒需保留两头的竹节，在一端留出约10厘米的把手，并钻一个硬币大小的小孔。<br>
+    主料：通常使用糯米或大米，也可以根据个人口味加入腊肉、腊肠、田鸡、排骨、黄鳝、竹笋等食材。<br>
+    调料：盐、生抽、老抽、五香粉等，用于提升风味。<br>
+</i></b></p>
+</div>
+<div class="photos1">
+<img src="photos/瑶族_竹筒饭2.jpg" alt="2">
+<img src="photos/瑶族_竹筒饭3.jpg" alt="3">
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    清洗竹筒：将竹筒的两端切齐，清洗干净并晾干。<br>
+    准备食材：将米洗净后浸泡30分钟至1小时，使其更松软。将腊肉、腊肠等食材切成小块备用。<br>
+    装料：将浸泡好的米和切好的食材放入竹筒中，加入适量的水（米与水的比例约为1:1.5），再根据口味加入调料。<br>
+    封口：用木塞或竹叶将竹筒口塞紧，确保密封。<br>
+    烧烤：将竹筒放在火堆上烧烤，不断旋转竹筒，避免烧焦。当竹筒表层烧焦，竹子开孔处冒出水蒸气时，竹筒饭就熟了。<br>
+    出锅：将竹筒取出，轻轻劈开竹筒，取出竹筒饭，即可享用。<br>
+</p>
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    竹筒选择：竹筒需选用新鲜、无裂缝的竹子，以确保安全和口感。<br>
+    火候控制：烧烤时不能让竹筒着火，要不断旋转竹筒，确保受热均匀。<br>
+    水量控制：水不能加得太少，否则米饭会硬或半生不熟。<br>
+    劈开竹筒：劈开竹筒时要小心，避免用力过猛导致竹筒饭破碎。<br>
+</p></i></b>
+</div>
+
+<div class="video_intro">
+    <h2><b><i>
+        五、视频介绍
+    </i></b></h2>
+    <p>一些网上的制作这道菜的视频，可供大家学习和参考，满足自己的食欲!</p>
+    <a href="https://www.bilibili.com/video/BV1XE411M71K/?spm_id_from=333.337.search-card.all.click">bilibili上的教程</a>
+</div>
+<a href="详情页_瑶族.html" class="a1">返回到瑶族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

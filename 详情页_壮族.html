@@ -1,0 +1,101 @@
+<!doctype  html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>壮族特色美食</title>
+<style>
+
+    .grid-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);/*这个是让排版呈现8 * 7的样式排列*/
+    gap: 20px;
+    /* animation: zoomIn 2s; */
+
+  }
+  .grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .grid-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 5px;
+    animation: zoomIn 2s;
+  }
+
+  .grid-item p {
+    margin-top: 10px;
+    text-align: center;
+    font-family: "KaiTi";
+    font-size: larger;
+     color: rgb(252, 3, 3);
+  }
+
+  .grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .grid-item:active {
+    transform: translateY(-2px);
+  }
+  .description{
+    text-align: center;
+     font-family: "YouYuan";
+    color:rgb(0, 240, 248);
+  }
+  .claim{
+    font-family: "YouYuan";
+    font-size: x-large;
+    color: teal;
+  }
+  .a{
+    font-size: xx-large;
+  }
+</style>
+</head>
+<body>
+    <div class="description"> 
+        <h1><b><i>壮族的美食文化，宛如一颗璀璨的明珠，镶嵌在中华美食的宝库之中。<br>
+            每一口壮族美食，都是一次穿越时空的味蕾之旅，让人在舌尖上领略到壮族文化的深厚底蕴和独特魅力。
+       </i></b></h1>
+</div>
+ 
+<div class="grid-container">
+<a href="壮族_五色糯米饭.html" class="grid-item">
+    <img src="photos/壮族_五色糯米饭1.jpg" alt="五色糯米饭">
+    <p>五色糯米饭</p></a>
+    <a href="壮族_螺蛳粉.html" class="grid-item">
+        <img src="photos/壮族_螺蛳粉1.jpg" alt="螺蛳粉">
+        <p>螺蛳粉</p></a>
+        <a href="壮族_竹筒煨饭.html" class="grid-item">
+            <img src="photos/壮族_竹筒饭1.jpg" alt="竹筒煨饭">
+            <p>竹筒煨饭</p></a>
+
+            <a href="壮族_豆腐酿.html" class="grid-item">
+                <img src="photos/壮族_豆腐酿1.jpg" alt="豆腐酿">
+                <p>豆腐酿</p>  </a>      
+                
+            <a href="壮族_鱼生.html" class="grid-item">
+              <img src="photos/壮族_鱼生1.jpg" alt="鱼生">
+              <p>鱼生</p>      </a>
+              <a href="壮族_白切狗肉.html" class="grid-item">
+                <img src="photos/壮族_白切狗肉1.jpg" alt="白切狗肉">
+                <p>白切狗肉</p>   </a>
+                <a href="壮族_火草粑粑.html" class="grid-item">
+                  <img src="photos/壮族_火草粑粑1.jpg" alt="白切狗肉">
+                  <p>火草粑粑</p>  </a>
+</div>
+<div class="claim">
+    <p><b>如果你没有找到你想要的，不要灰心，我们还在收集和整理当中！</b></p>
+</div>
+<a href="副页.html">返回副页</a><br>
+<a href="主页.html">返回主页</a>
+</body>
+</html>

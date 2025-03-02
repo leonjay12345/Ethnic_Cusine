@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鱼生</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/壮族_鱼生1.jpg);
+    background-position: center; background-repeat: no-repeat;
+    background-size:contain;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+     /* background-color: tan; */
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+
+
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>鱼 &nbsp &nbsp 生
+    </i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        鱼生，又称生鱼片，古称“脍”，是中国传统美食之一。<br>
+        其历史可追溯至千年之前，最早见于《周礼》与《礼记》。<br>
+        在广东顺德，鱼生被称为“风生水起”的象征，寓意生活兴旺、事业顺遂，是节庆与宴席上的经典佳肴。<br>
+        此外，鱼生在新加坡等地也有深厚的文化背景，尤其在农历新年期间，人们会在正月初七“捞鱼生”，寓意“风生水起，年年有余”。<br>
+</b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    鱼的选择：传统上多用淡水鱼（如鲩鱼、草鱼），但现代多选用海鲈鱼或海皖鱼，因其肉质紧实、鲜甜。<br>
+    配料：姜丝、蒜片、柠檬叶丝、酸荞头、辣椒丝、花生碎、芝麻、香菜等。<br>
+    调料：盐、糖、生抽、醋、花生油、芥末等。<br>
+</i></b></p>
+</div>
+<div class="photos1">
+<img src="photos/壮族_鱼生2.jpg" alt="草鱼">
+<img src="photos/壮族_鱼生3.jpg" alt="葱姜蒜">
+<img src="photos/壮族_鱼生4.jpg" alt="花生">
+<img src="photos/壮族_鱼生5.jpg" alt="芝麻">
+<img src="photos/壮族_螺蛳粉10.jpg" alt="小料">
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    <b>选鱼与处理：</b>
+    选择新鲜的鱼，提前饿养几天，排出杂质和泥沙。<br>
+    将鱼敲晕，从鱼尾和鱼头处割一刀放血，使鱼肉洁白。<br>
+    去鳞、去内脏、去骨，将鱼肉切成薄片，厚度约0.5毫米。<br>
+    <b>配料准备：</b>
+    将配料切成细丝，如姜丝、柠檬叶丝、胡萝卜丝等。<br>
+    <b>摆盘与调味：</b>
+    将鱼片铺在冰盘上，撒上配料。<br>
+    加入适量的盐、糖、生抽、醋、花生油等调料，搅拌均匀。<br>
+    <b>食用：</b>
+    用筷子夹取鱼片和配料，放入碗中，拌匀后即可食用。<br>
+</p>
+</div>
+<div class="photos2">
+<img src="photos/壮族_鱼生6.jpg" alt="鱼生">
+<img src="photos/壮族_鱼生7.jpg" alt="鱼生">
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    鱼的新鲜度：选择新鲜的鱼，避免使用冷冻鱼。<br>
+    刀工要求：鱼片需薄如蝉翼，厚度均匀，以保证口感。<br>
+    卫生安全：处理鱼肉时需注意卫生，避免细菌滋生。<br>
+    配料搭配：配料需切成细丝，以便更好地与鱼片交融。<br>
+    食用顺序：在冬季，先放鱼肉再放配料；夏季则先拌配料再放鱼肉。<br>
+</p></i></b>
+</div>
+<div class="video_intro">
+    <h2><b><i>
+        五、视频介绍
+    </i></b></h2>
+    <p>一些网上的制作这道菜的视频，可供大家学习和参考，满足自己的食欲!</p>
+    <a href="https://www.bilibili.com/video/BV1D84y117H8/?spm_id_from=333.337.search-card.all.click">bilibili上的教程</a>
+</div>
+<a href="详情页_壮族.html" class="a1">返回到壮族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>
