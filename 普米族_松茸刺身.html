@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>松茸刺身</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/普米族_松茸刺身1.jpg);
+    background-position: center; background-repeat: no-repeat;
+    background-size:contain;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>松茸刺身</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        松茸刺身是一种追求食材原汁原味的食用方式，源自日本料理中对新鲜食材的极致追求。<br>
+        松茸作为一种珍贵的野生菌类，生长于高海拔的原始森林中，因其独特的香气和丰富的营养价值而备受推崇。<br>
+        松茸刺身保留了松茸的天然风味和营养成分，体现了对自然馈赠的尊重和珍惜。<br>
+    </b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    主料：新鲜松茸（建议选择5-9厘米的嫩松茸，口感更佳）。<br>
+    调料：日本酱油、芥末、柠檬汁（可选）、海盐。<br>
+    辅助材料：冰块（用于冰镇）、保鲜膜。<br>
+</i></b></p>
+</div>
+<div class="photos2">
+<img src="photos/普米族_松茸刺身2.jpg" alt="/">
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    清洁松茸：用小刀轻轻刮去松茸根部的泥脚和表面的泥土，避免用水浸泡。可以用湿布或厨房纸轻轻擦拭，必要时用流水快速冲洗，但需保持松茸的香气。<br>
+    切片：将松茸切成3-3.5毫米厚的薄片，厚度适中可保证口感。<br>
+    冰镇：在盘底铺上冰块，将松茸片整齐摆放在冰块上，覆盖保鲜膜后放入冰箱冷藏30分钟，冰镇后的松茸口感更脆嫩。<br>
+    调制蘸料：将酱油、芥末（可加入少量柠檬汁增加清爽感）调匀，或根据个人口味准备海盐。<br>
+    摆盘与食用：将冰镇好的松茸片取出，搭配蘸料即可食用。<br>
+</p>
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    选择新鲜松茸：优先选择采摘后48小时内的松茸，确保口感和风味。<br>
+    避免浸泡：松茸不宜长时间浸泡，否则会失去香气。<br>
+    卫生处理：切片前确保刀具和案板清洁，避免交叉污染。<br>
+    适量食用：松茸性寒，体质虚寒者应适量食用。<br>
+    冰镇提升口感：冰镇后的松茸口感更佳，但不宜冷藏过久。<br>
+</p></i></b>
+</div>
+<a href="详情页_普米族.html" class="a1">返回普米族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

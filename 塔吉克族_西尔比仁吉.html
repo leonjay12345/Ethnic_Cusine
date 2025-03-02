@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>西尔比仁吉</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/塔吉克族_西尔比仁吉1.jpg);
+    background-position: center; background-repeat: no-repeat;
+    background-size:contain;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<!-- <div class="title"></div> -->
+<div class="main">
+    <h1><b><i>西尔比仁吉</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        西尔比仁吉是塔吉克族的传统美食，由牛奶和大米煮成的粥。<br>
+        它不仅是一种日常食品，还在婚礼等重要场合中扮演重要角色，象征着纯洁与幸福。<br>
+        在高原地区，稻米曾是稀缺食材，因此西尔比仁吉被视为珍贵的食物，常用于款待尊贵的客人。<br>
+    </b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    主料：大米、牛奶。<br>
+    辅料：白糖（可选）。<br>
+    工具：锅、搅拌勺。<br>
+</i></b></p>
+</div>
+<div class="photos2">
+<img src="photos/塔吉克族_西尔比仁济1.jpg" alt="/">
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    准备食材：将大米洗净，沥干水分。<br>
+    煮牛奶：在锅中倒入牛奶，用中小火加热，避免牛奶溢出。<br>
+    加入大米：当牛奶开始冒泡时，加入洗净的大米，搅拌均匀。<br>
+    熬煮：用小火慢慢熬煮，期间不断搅拌，防止糊锅。煮至大米熟透，粥变得浓稠。<br>
+    调味：根据个人口味加入适量白糖，搅拌均匀。<br>
+    出锅：将煮好的西尔比仁吉盛入碗中，即可食用。<br>
+</p>
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    火候控制：牛奶容易溢出，煮时需用中小火，并注意观察。<br>
+    不断搅拌：熬煮过程中要不断搅拌，防止糊锅，同时让大米充分吸收牛奶。<br>
+    牛奶选择：建议使用全脂牛奶，这样煮出的粥更加浓郁香醇。<br>
+    保存方法：西尔比仁吉最好现煮现吃，若需保存，可放入冰箱冷藏，但口感会变稠。<br>
+</p></i></b>
+</div>
+<a href="详情页_塔吉克族.html" class="a1">返回塔吉克族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

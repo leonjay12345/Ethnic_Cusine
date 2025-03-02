@@ -1,0 +1,86 @@
+<!doctype  html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>普米族民族特色美食</title>
+<style>
+
+    .grid-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);/*这个是让排版呈现8 * 7的样式排列*/
+    gap: 20px;
+    /* animation: zoomIn 2s; */
+
+  }
+  .grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .grid-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 5px;
+    animation: zoomIn 2s;
+  }
+
+  .grid-item p {
+    margin-top: 10px;
+    text-align: center;
+    font-family: "KaiTi";
+    font-size: larger;
+     color: rgb(252, 3, 3);
+  }
+
+  .grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .grid-item:active {
+    transform: translateY(-2px);
+  }
+  .description{
+    text-align: center;
+     font-family: "YouYuan";
+    color:rgb(0, 240, 248);
+  }
+  .claim{
+    font-family: "YouYuan";
+    font-size: x-large;
+    color: teal;
+  }
+  .a{
+    font-size: xx-large;
+  }
+</style>
+</head>
+<body>
+    <div class="description"> 
+        <h1><b><i>
+            普米族美食如同雪山下盛开的杜鹃花，以独特的风味和质朴的制作工艺，绽放出普米族人民对生活的热爱与智慧。
+</div>
+ 
+<div class="grid-container">
+<a href="普米族_松茸刺身.html" class="grid-item">
+    <img src="photos/普米族_松茸刺身1.jpg" alt="/">
+    <p>松茸刺身</p>
+</a>
+<a href="普米族_奶渣.html" class="grid-item">
+    <img src="photos/普米族_奶渣1.jpg" alt="/">
+    <p>奶渣</p>
+</a>
+</div>
+<p>普米族的民族特色美食在风味和制作方式上与藏族、纳西族和傈僳族等民族较为相似。所以还可以在这些民族的栏目下面寻找特色美食</p>
+<div class="claim">
+    <p><b>如果你没有找到你想要的，不要灰心，我们还在收集和整理当中！</b></p>
+</div>
+<a href="副页.html">返回副页</a><br>
+<a href="主页.html">返回主页</a>
+</body>
+</html>

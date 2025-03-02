@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>白炠肉
+    </title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/仫佬族_白炠肉1.jpg);
+    background-position: center; background-repeat: no-repeat;
+    background-size:contain;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>白炠肉</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        白炠肉是仫佬族的传统风味食品，其历史可以追溯到古代祭祀文化。<br>
+        在仫佬族的传统习俗中，白炠肉通常用于祭祀祖先或在重要节日中食用。<br>
+        这种烹饪方式保留了肉类的原汁原味，体现了仫佬族对食材本质的尊重和对传统的坚守。<br>
+    </b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    主料：新鲜猪肉（五花肉或后腿肉）。<br>
+    辅料：生姜、葱、八角、香叶、红枣（可选）。<br>
+    调料：盐、酱油（可选）。<br>
+    工具：大锅、刀、案板。<br>
+</i></b></p>
+</div>
+<div class="photos2">
+<img src="photos/仫佬族_白炠肉2.jpg" alt="/">
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    准备食材：将猪肉清洗干净，去除血水和杂质。<br>
+    煮肉：在锅中加入足够的水，放入生姜片、葱段和八角，将猪肉放入冷水中，大火煮开后撇去浮沫。<br>
+    调味与煮熟：加入适量盐，转小火慢煮约40分钟至1小时，直到肉质变软，筷子可以轻松插入。<br>
+    浸泡：煮熟后，让肉在汤中浸泡10-15分钟，使肉质更加鲜嫩。<br>
+    冷却与切片：将肉捞出，放入冷水中冷却，然后切成薄片。<br>
+    准备蘸料：将蒜末、酱油、辣椒油、花椒油、香醋等调料混合均匀。<br>
+    装盘：将切好的肉片摆放在盘中，淋上调料汁，撒上香菜或葱花即可。<br>
+</p>
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    冷水下锅：猪肉必须在冷水中下锅，这样可以更好地去除油脂，使肉质鲜嫩不油腻。<br>
+    火候控制：煮肉时要用小火慢炖，避免肉质变老。<br>
+    浸泡时间：煮熟后浸泡10-15分钟，可以让肉质更加紧实。<br>
+    切片技巧：肉片要切得薄而均匀，这样口感更好。<br>
+    蘸料搭配：根据个人口味调整蘸料，蒜末和辣椒油是提升风味的关键。<br>
+</p></i></b>
+</div>
+<a href="详情页_仫佬族.html" class="a1">返回仫佬族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

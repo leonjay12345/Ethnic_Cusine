@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>炖鱼
+    </title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/锡伯族_炖鱼1.jpg);
+    background-position: center; background-repeat: no-repeat;
+    background-size:contain;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>炖鱼</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        锡伯族炖鱼，又称“布尔哈雪克炖鱼”或“尼姆哈鱼炖子”，是锡伯族的传统美食，具有悠久的历史。<br>
+        锡伯族先民在东北白山黑水地区过着渔猎生活，以鱼肉为主食，其吃法多样，包括清炖、烤吃、腌吃和晒吃等。<br>
+        后来，人们在清炖鱼汤中加入椒蒿（布尔哈雪克）、韭菜等食材，逐渐演变成如今的炖鱼。<br>
+        这道菜不仅承载着锡伯族的饮食文化，也寄托着锡伯人对家乡的思念。<br>
+    </b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    主料：鲜活鲤鱼1条（约1000克）。<br>
+    辅料：
+    椒蒿嫩茎或干椒蒿适量（关键食材，可邮寄或晒干保存）。
+    生姜、大蒜适量，切片。
+    韭菜适量，切段。
+    干辣椒4-5个。
+    面粉少许（用于勾芡）。<br>
+    调料：
+    盐、酱油、醋、味精。
+    清油（植物油）。<br>
+</i></b></p>
+</div>
+<div class="photos2">
+<img src="photos/锡伯族_炖鱼2.jpg" alt="/">
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    处理鱼：将鲤鱼去鳞、开膛、去内脏，清洗干净后切成小块。<br>
+    煎鱼：锅中加入适量清油，烧热后放入鱼块，煎至两面金黄。<br>
+    调味：加入姜片、干辣椒、酱油、醋，翻炒均匀，去除腥味。<br>
+    炖煮：倒入适量开水（没过鱼块），加入椒蒿嫩茎，大火烧开后转小火慢炖。<br>
+    勾芡：鱼炖至八分熟时，加入切好的韭菜和调好的面糊（面粉加水搅拌均匀），搅拌均匀，使汤汁浓稠。<br>
+    出锅：炖至鱼肉鲜嫩，汤汁浓稠后，加入适量盐和味精调味，即可出锅。<br>
+</p>
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    选鱼：必须选用鲜活的鲤鱼，以保证鱼肉的鲜嫩。<br>
+    椒蒿：椒蒿是这道菜的灵魂，不可用其他香草替代。<br>
+    煎鱼：煎鱼时火候要适中，避免煎焦，否则会影响口感。<br>
+    炖煮：炖鱼时需用小火慢炖，时间越长越入味。<br>
+    勾芡：面糊要稀稠适中，搅拌均匀后加入，避免结块。<br>
+    搭配：传统上，锡伯族炖鱼常搭配高粱米熬成的稀饭一起食用。<br>
+</p></i></b>
+</div>
+<a href="详情页_锡伯族.html" class="a1">返回锡伯族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

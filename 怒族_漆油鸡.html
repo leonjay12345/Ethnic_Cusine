@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>漆油鸡</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/怒族_漆油鸡1.jpg);
+    background-position: center; background-repeat: no-repeat;
+    background-size:contain;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>漆油鸡</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        漆油鸡是怒江傈僳族、怒族的传统美食，具有深厚的文化和历史意义。<br>
+        漆油是从漆树果实中榨取的天然油脂，其制作和使用历史可以追溯到很久以前。<br>
+        漆油不仅是一种独特的调味品，还具有药用价值，被认为有滋阴补阳、补血益气的功效。<br>
+        漆油鸡作为一道传统美食，常在逢年过节或招待贵宾时制作，象征着热情好客和对生活的热爱。<br>
+    </b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    主料：土鸡或三黄鸡（约1500克）。<br>
+    辅料：漆油（约200克）。<br>
+    调料：盐、草果（可选）、姜片、葱段等。<br>
+</i></b></p>
+</div>
+<div class="photos2">
+<img src="photos/怒族_漆油鸡2.jpg" alt="/">
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    准备鸡肉：将土鸡宰杀后去毛洗净，剁成大小均匀的小块。<br>
+    焯水：将鸡块与姜片一起放入冷水中煮，水沸后2到3分钟，浮沫漂起后捞出，冲洗干净并沥干水分。<br>
+    化漆油：将漆油放入锅中，加热至完全熔化。<br>
+    炒制：将鸡块放入锅中，用漆油爆炒至表面微黄。此时可加入一半的盐，继续翻炒均匀。<br>
+    炖煮：加入适量清水，水量需没过鸡块，转小火炖煮40分钟左右。<br>
+    调味：草果可在碳火上烤香后舂成粉，炖好后加入剩余的盐和草果粉调味。<br>
+    出锅：炖至鸡肉酥软入味后，撒上葱段即可出锅。<br>
+</p>
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    漆油的选择：漆油质量至关重要，优质的漆油颜色较深，呈棕色或土黄色。<br>
+    鸡肉处理：鸡块焯水后需彻底冲洗干净，以去除杂质和腥味。<br>
+    火候控制：炒制时火候不宜过大，以免漆油烧焦。<br>
+    过敏问题：漆油可能引起部分人过敏，食用后若出现不适，需及时就医。<br>
+    炖煮时间：炖煮时间需足够长，以确保鸡肉酥嫩，汤汁浓郁。<br>
+</p></i></b>
+</div>
+<a href="详情页_怒族.html" class="a1">返回怒族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

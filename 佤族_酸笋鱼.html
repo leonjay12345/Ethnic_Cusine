@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>酸笋鱼</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/佤族_酸笋鱼1.jpg);
+    background-position: center;
+    background-size:contain; background-repeat: no-repeat;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+
+
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>酸笋鱼</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        酸笋包烧鱼起源于中国南方的少数民族聚居区，如壮族、苗族、佤族等地区。<br>
+        这些地区气候湿润，食物容易腐败，因此当地人发明了利用乳酸菌发酵的方式保存食物，其中就包括了制作酸笋。<br>
+        随着时间的推移，酸笋与新鲜鱼类被巧妙结合，形成了独具特色的酸笋鱼，成为当地饮食文化的重要组成部分，体现了人们对食物保存和烹饪智慧的传承。<br>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    主料：鱼一条（如罗非鱼、草鱼等），新鲜酸笋300-500克。<br>
+    配料：小米椒、大蒜、生姜、香葱、香菜等适量。<br>
+    调味料：生抽、老抽、陈醋、白糖、盐、鸡精、料酒、胡椒粉等。<br>
+</i></b></p>
+</div>
+<div class="photos1">
+
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    鱼的处理：将鱼宰杀干净，去掉内脏和鱼鳞，清洗干净后从背部剖开，切成约2厘米厚的段状，用少许盐、胡椒粉腌制10分钟。<br>
+    酸笋的处理：新鲜酸笋洗净切片，放入清水中浸泡半小时去除部分酸味，水开后焯水3分钟，捞出沥干水分备用。<br>
+    炒制配料：锅中倒入适量油，油热后加入切好的小米椒、大蒜、生姜爆香；放入酸笋片快速翻炒均匀，加入适量的陈醋、白糖提味，继续翻炒至酸笋出香味。<br>
+    烹煮鱼块：锅中留底油，将腌制好的鱼块两面煎至金黄；加入足够的热水（没过鱼身），大火烧开后转小火慢炖；<br>
+    待汤色变白且鱼肉熟透时，加入之前炒好的酸笋以及所有调味料，搅拌均匀；最后撒上切好的香菜即可出锅装盘。<br>
+</p>
+</div>
+<div class="photos2">
+<img src="photos/佤族_酸笋鱼2.jpg" alt="/">
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    鱼的选择：鱼的种类可以根据个人口味选择，但最好选择肉质紧实、口感鲜嫩的鱼类。<br>
+    酸笋的处理：酸笋的酸味可以根据个人口味进行调整，如果喜欢淡一点的酸味，可以先用水泡上一阵。<br>
+    煎鱼的技巧：煎鱼时，锅一定要刷干净，热锅凉油放入鱼，中火煎至鱼皮焦黄，关火2分钟后翻面继续煎，这样鱼皮就不容易破。<br>
+    火候控制：烹煮鱼块时，大火烧开后要转小火慢炖，以确保鱼肉鲜嫩入味。<br>
+</p></i></b>
+</div>
+
+<div class="video_intro">
+    <h2><b><i>
+        五、视频介绍
+    </i></b></h2>
+    <p>一些网上的制作这道菜的视频，可供大家学习和参考。</p>
+    <a href="https://www.bilibili.com/video/BV1tc411K7Z2/?spm_id_from=333.337.search-card.all.click">bilibili上的教程</a>
+</div>
+
+<a href="详情页_佤族.html" class="a1">返回到佤族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>油茶</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/苗族_油茶1.jpg);
+    background-position: center; background-repeat: no-repeat;
+    background-size:contain;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+
+
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>油 &nbsp 茶</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        苗族油茶的历史可以追溯到后汉时期，已有上千年的历史。<br>
+        苗族先民居住在山高水冷、气候严寒的地区，为了抵御瘴气和疾病，他们靠多饮茶来保持健康。<br>
+        后来，为了克服浓茶带来的不适，苗族先民开始在茶汤中加入杂粮和调味品，既能预防疾病，又能充饥解渴，逐渐形成了油茶的雏形。<br>
+</b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    主料：糯米、黄豆、花生、茶叶（峒茶叶或绿茶）、生姜、大蒜、胡椒粉、葱花。<br>
+    辅料：盐、茶油、清水。<br>
+</i></b></p>
+</div>
+<div class="photos1">
+
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    准备阴米：
+    将糯米浸泡一晚，蒸熟后晒干或晾干，用石碓舂扁，做成阴米备用。<br>
+    准备茶叶：
+    选用上等茶叶，用开水焯软后，放米汤水揉搓，做成茶叶片或茶叶饼，晒干备用。<br>
+    炒制茶料：
+    用铁锅炒熟阴米、花生、玉米、黄豆等，煎好糍粑或蕨粑（红薯粉粑或水米花粑），煮熟豆角、苦笋等备用。<br>
+    熬制茶汤：
+    将茶叶放入锅中，加入少量清水煮沸，用擂钵捣碎，再加入适量茶油和清水，熬制成浓茶汤。<br>
+    备好配料：
+    生姜、大蒜和姜木子捣碎，胡椒磨成粉，香葱切成丝，分别放好备用。<br>
+    备杯散茶：
+    按人数将油茶杯放进茶盘，将主料配料依次舀入杯中，用汤瓢淋上滚烫的茶汤。<br>
+    端茶喝茶：
+    由女主人双手将油茶端到客人面前，客人用双手接茶，以示回敬。<br>
+</p>
+</div>
+<div class="photos2">
+
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    茶叶选择：选用上等的峒茶叶或绿茶，茶叶的质量直接影响油茶的口感。<br>
+    火候控制：炒制阴米和茶料时，火候要适中，避免炒焦。<br>
+    茶汤熬制：茶汤的颜色和味道是关键，茶色应呈金黄色，茶味醇香。<br>
+    礼仪规范：喝油茶时，每人每次至少连喝四杯，寓意“好事成双”“四季发财”。<br>    
+</p></i></b>
+</div>
+<div class="video_intro">
+    <h2><b><i>
+        五、视频介绍
+    </i></b></h2>
+    <p>一些网上的制作这道菜的视频，可供大家学习和参考，满足自己的食欲!</p>
+    <a href="https://www.bilibili.com/video/BV1La4y197UT/?spm_id_from=333.337.search-card.all.click">bilibili上的教程</a>
+</div>
+<a href="详情页_苗族.html" class="a1">返回到苗族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!doctype  html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>傣族特色美食</title>
+<style>
+
+    .grid-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);/*这个是让排版呈现8 * 7的样式排列*/
+    gap: 20px;
+    /* animation: zoomIn 2s; */
+
+  }
+  .grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .grid-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 5px;
+    animation: zoomIn 2s;
+  }
+
+  .grid-item p {
+    margin-top: 10px;
+    text-align: center;
+    font-family: "KaiTi";
+    font-size: larger;
+     color: rgb(252, 3, 3);
+  }
+
+  .grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .grid-item:active {
+    transform: translateY(-2px);
+  }
+  .description{
+    text-align: center;
+     font-family: "YouYuan";
+    color:rgb(0, 240, 248);
+  }
+  .claim{
+    font-family: "YouYuan";
+    font-size: x-large;
+    color: teal;
+  }
+  .a{
+    font-size: xx-large;
+  }
+</style>
+</head>
+<body>
+    <div class="description"> 
+        <h1><b><i>傣族美食如同西双版纳的热带雨林，充满了生机与活力，每一道菜都如同一片翠绿的芭蕉叶，包裹着大自然的馈赠，酸辣鲜香，让人回味无穷。
+       </i></b></h1>
+</div>
+ 
+<div class="grid-container">
+<a href="傣族_菠萝紫米饭.html" class="grid-item">
+    <img src="photos/傣族_菠萝紫米饭1.jpg" alt="菠萝紫米饭">
+    <p>菠萝紫米饭</p>
+</a>
+<a href="傣族_酸笋螺蛳.html" class="grid-item">
+    <img src="photos/傣族_酸笋螺蛳1.jpg" alt="酸笋螺蛳">
+    <p>酸笋螺蛳</p>
+</a>
+<a href="傣族_撒撇.html" class="grid-item">
+    <img src="photos/傣族_撒撇1.jpg" alt="撒撇">
+    <p>撒撇</p>
+</a>
+
+
+
+        
+</div>
+<div class="claim">
+    <p><b>如果你没有找到你想要的，不要灰心，我们还在收集和整理当中！</b></p>
+</div>
+<a href="副页.html">返回副页</a><br>
+<a href="主页.html">返回主页</a>
+</body>
+</html>

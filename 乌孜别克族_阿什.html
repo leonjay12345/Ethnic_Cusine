@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>阿什
+    </title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/乌孜别克族_阿什1.jpg);
+    background-position: center; background-repeat: no-repeat;
+    background-size:contain;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>阿 &nbsp 什</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        阿什是波斯传统食物，广泛流行于伊朗、阿富汗、塔吉克斯坦等中亚地区，也是回族的传统食物之一。<br>
+        在伊朗，阿什不仅是一种日常美食，还具有重要的宗教和文化意义。<br>
+        例如，在阿舒拉日（纪念伊玛目侯赛因的节日），人们会制作阿什并免费施舍给周围的人，以表达对烈士的纪念。<br>
+        这种传统也体现了阿什作为一种“团结食物”的象征意义，它将人们聚集在一起，分享温暖和关怀。<br>
+    </b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    主料：干面条或乌冬面200克、鹰嘴豆、绿豆、芸豆等豆类2杯（需提前浸泡一夜）。<br>
+    辅料：洋葱1个、胡萝卜1根、香菜、菠菜、韭菜等香草适量、姜黄1-2汤匙、盐、胡椒粉、酸奶或乳制品（如Cashuk）。<br>
+    调料：食用油、干薄荷、金银花（可选）。<br>
+</i></b></p>
+</div>
+<div class="photos2">
+<img src="photos/乌孜别克族_阿什2.jpg" alt="/">
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    准备豆类：将浸泡好的豆类放入大锅中，加水煮熟，直至豆类变软。<br>
+    调味与炖煮：加入姜黄、盐和胡椒粉调味，再加入切碎的香草，继续炖煮10-15分钟。<br>
+    加入面条：将干面条逐渐加入锅中，加强火势，煮至面条变软，期间需多次搅拌。<br>
+    调稠：将面粉与1杯冷水混合，倒入锅中搅拌均匀，继续小火煨30-35分钟。<br>
+    加入酸奶：最后加入酸奶或乳制品（如Cashuk），搅拌均匀。<br>
+    装盘与装饰：将阿什盛入碗中，撒上炒香的洋葱、大蒜、干薄荷等配料，可根据个人口味加入酸奶。<br>
+</p>
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    豆类浸泡：豆类需提前浸泡一夜，以缩短煮制时间。<br>
+    火候控制：煮制过程中需注意火候，避免糊锅。<br>
+    搅拌均匀：加入面粉水时需缓慢搅拌，防止结块。<br>
+    食材搭配：可根据个人口味调整香草种类和配料。<br>
+</p></i></b>
+</div>
+<a href="详情页_乌孜别克族.html" class="a1">返回乌孜别克族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

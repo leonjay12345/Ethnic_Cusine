@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>卡特拉玛</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/塔吉克族_卡特拉玛1.jpg);
+    background-position: center; background-repeat: no-repeat;
+    background-size:contain;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<!-- <div class="title"></div> -->
+<div class="main">
+    <h1><b><i>卡特拉玛</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        卡特拉玛是塔吉克族的传统食品，被誉为“羊奶皮千层饼”，是塔吉克族饮食文化中最具代表性的美食之一。<br>
+        它不仅是塔吉克族日常饮食的重要组成部分，更常用于款待尊贵客人、节日庆典等重要场合，体现了塔吉克族人民的热情好客和对生活的热爱。<br>
+        这种食品的制作工艺和原料选择都与塔吉克族的游牧生活方式密切相关，富含奶制品的卡特拉玛为高原上从事重体力劳动的人们提供了丰富的能量。<br>
+
+    </b></p>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    主料：面粉、酵母、盐、温水。<br>
+    辅料：奶油或奶皮子（可选用自制或市售）、鸡蛋、白砂糖。<br>
+    工具：擀面杖、馕坑或烤箱。  <br>
+</i></b></p>
+</div>
+<div class="photos2">
+
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    和面：将面粉、酵母、盐、温水混合，揉成光滑的面团，发酵至两倍大。<br>
+    准备馅料：将奶油或奶皮子切成薄片备用。<br>
+    擀面：将发酵好的面团擀成大薄饼，厚度约2-3毫米。<br>
+    涂抹馅料：在薄饼上均匀涂抹一层奶油或奶皮子。<br>
+    卷制成型：将薄饼卷成长条，反复扭转后盘成圈状，放入烤盘或馕坑中。<br>
+    烤制：在馕坑中烤制约1.5小时，或放入预热至180℃的烤箱中烤制30-35分钟，直至表面金黄酥脆。<br>
+</p>
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    面团发酵：面团需充分发酵，否则成品口感会偏硬。<br>
+    馅料选择：奶油或奶皮子是卡特拉玛的灵魂，建议选择自制或高品质的奶皮子。<br>
+    火候控制：烤制时需严格控制火候，避免外焦里生。<br>
+    传统工艺：传统卡特拉玛需在馕坑中烤制，现代家庭可用烤箱替代，但风味略有不同。<br>
+</p></i></b>
+</div>
+<a href="详情页_塔吉克族.html" class="a1">返回塔吉克族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>卤牛头</title>
+</head>
+<style>
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.title{
+    width: 200vh;
+    height: 50vh;
+    background-image: url(photos/佤族_卤牛头1.jpg);
+    background-position: center; background-repeat: no-repeat;
+    background-size:contain;
+    animation:flash 20s infinite
+}
+.main{
+    font-family: "KaiTi";
+    text-align: center;
+    background-color: rgb(248, 231, 154);
+    font-size: larger;
+}
+.introduction h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.introduction p{
+    font-size: larger;
+    font-family: "KaiTi";
+    font-size:x-large;
+}
+.preparations h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.preparations p{
+    font-family: "KaiTi";
+    font-size: x-large;
+}
+.photos1{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 10px; /* 设置图片之间的间隔 */
+}
+.photos1 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 300px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: rotate 10s linear infinite;
+    border-radius: 50%;
+}
+.making h2{
+     font-family: "YouYuan";
+     font-size: xx-large;
+
+}
+.making p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: tan;
+}
+.photos2{
+    display: flex; /* 启用flexbox布局 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    justify-content: start; /* 水平排列 */
+    gap: 200px; /* 设置图片之间的间隔 */
+}
+.photos2 img{
+    width: 100%; /* 根据容器宽度调整图片大小 */
+    max-width: 600px; /* 设置图片最大宽度，防止过大 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 10px; /* 如果需要在垂直方向上也有间隔 */
+    animation: zoomIn 2s;
+}
+.notice h2{
+    font-family: "YouYuan";
+    font-size: xx-large;
+}
+.notice p{
+    font-family: "KaiTi";
+    font-size: x-large;
+    background-color: burlywood;
+}
+.video_intro a{
+    font-size: xx-large;
+    font-family: "YouYuan";
+    text-decoration: none;
+}
+.video_intro:active
+{
+    color: tan;
+}
+.a1{
+    background-color: rgb(255, 0, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(162, 0, 255);
+    text-decoration-style: dotted; 
+    animation:headslide 1s ease-in-out
+}
+.a2{
+    background-color: rgba(55, 128, 0, 0.884);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration:underline;
+    text-decoration-style: wavy; 
+    animation:headslide 1s ease-in-out
+}
+.a3{
+    background-color: rgb(255, 204, 0);
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    text-decoration: underline;
+    text-decoration-color: aqua; 
+    animation:headslide 1s ease-in-out
+}
+
+
+</style>
+<!-------------------------------以下是body部分-------------------------------->
+<body>
+<div class="title"></div>
+<div class="main">
+    <h1><b><i>酸笋鱼</i></b></h1>
+</div>
+<div class="introduction">
+    <h2><b><i>一、简单介绍：</i></b></h2>   
+    <p><b>
+        牛头在佤族文化中具有重要的象征意义，被视为财富和权力的象征。<br>
+        佤族人崇拜牛头，认为牛头骨具有与天、神、祖先联系的能力，通过对牛头的祭拜，可以得到祖先及天地间所有神灵的护佑。<br>
+        这种文化背景使得牛头在佤族饮食文化中占据重要地位，卤牛头不仅是美食，更是佤族文化传承的重要载体。<br>
+</div>
+<div class="preparations">
+<h2><b><i>二、食材、工具准备：</i></b></h2>
+<p><b><i>
+    主料：黄牛头1个（净重约40-45斤），尽量选择肉质紧实、无花斑的牛头。<br>
+    调料：<br>
+    葱段、姜块各15克。<br>
+    花椒3克，大料（八角）3克，桂皮3克，丁香3粒，香叶5片，干辣椒100克。<br>
+    老酱汤6000克，蚝油5克，辣酱油5克，味精3克，料酒3克，盐3克，白胡椒3克，白糖3克，香油5克。<br>
+    其他：牛大骨17斤，芹菜段1500克，胡萝卜块、洋葱块各1000克。<br>
+</i></b></p>
+</div>
+<div class="photos1">
+
+</div>
+<div class="making">
+<h2><b><i>三、制作方法：</i></b></h2>
+<p>
+    初加工：褪好毛的牛头从中间一锯为二，洗净沙子、刮去表皮黑斑等，入清水浸泡3小时，中间需换两次水。<br>
+    清煮：牛头放入锅中，添清水没过，加入料酒、白酒各一瓶，芹菜段1500克、胡萝卜块、洋葱块各1000克、大葱段、姜片各250克，大火烧开后撇去浮沫，转小火煮90分钟，关火捞出牛头备用。<br>
+    熬第一锅卤汤：<br>
+    牛大骨17斤冲洗干净后浸泡2小时，捞出放入不锈钢汤桶，添清水100斤，大火烧开后转小火吊7小时，关火打去渣子，约得牛肉汤70斤。<br>
+    八角100克、干辣椒75克、小茴香、花椒、白芷、白豆蔻、香叶各50克倒入五成热油炸香，捞出装入纱布扎紧制成香料包。<br>
+    将香料包放入牛肉汤中，加胡萝卜段1500克、芹菜段1000克、洋葱块500克、香菜250克，再将牛头放进汤里，调入盐600克、白酒150克、东古一品鲜酱油（1500克/瓶）、料酒各一瓶、老抽适量，大火烧沸后转小火烧5小时，关火浸泡2小时。<br>
+    煮制牛头：牛头皮朝上入锅，煮4个小时后翻面继续煮1小时、焖2小时，开餐前将牛头再次翻面使牛皮朝上煮至汤沸即可。<br>
+    出锅处理：捞出牛头，趁热去掉头骨放凉，抹上香油，食用时将牛头肉片成薄片码入盘内即可。<br>
+</p>
+</div>
+<div class="photos2">
+
+</div>
+<div class="notice">
+<h2><b><i>
+    四、烹饪及食用建议
+</h2></i></b>
+<p><b><i>
+    牛毛处理：用火烧焦牛毛后，用刀刮去焦面，直到没有毛根为止。烧时要从顶部开始，注意不要把皮烧裂。<br>
+    火候控制：牛头表皮极厚，胶质浓郁，一定要小火连卤加焖带泡至其成熟入味，切忌用猛火旺煮，否则表面成熟但内部不熟，且牛肉寡淡无味。<br>
+    保持卖相：卤制过程中切勿用刀叉划破牛皮，否则出品不美观。<br>
+    浸泡时间：牛头煮好后需在原汤中浸泡半小时，以确保入味。<br>
+    保存卤水：卤水需及时撇去浮沫，避免发腥。卤水使用后需打去渣子，上火烧开，关火后撒一把盐静置保存，第二天使用时按照加入清水和原料的分量补入盐、酱油。<br>
+</p></i></b>
+</div>
+
+<div class="video_intro">
+    <h2><b><i>
+        五、视频介绍
+    </i></b></h2>
+    <p>一些网上的制作这道菜的视频，可供大家学习和参考。</p>
+    <a href="https://www.bilibili.com/video/BV1ik4y1B7eX/?spm_id_from=333.337.search-card.all.click">bilibili上的教程</a>
+</div>
+
+<a href="详情页_佤族.html" class="a1">返回到佤族详情页 </a><br>
+<a href="副页.html" class="a2">返回副页</a><br>
+<a href="主页.html" class="a3">返回主页</a>
+</body>
+</html>
